@@ -1,0 +1,35 @@
+body{
+    background-color: #e8ddcb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    justify-content: space-around;
+    display: flex;
+    font-size: 30px;
+    background-color: #152822;
+    color: white;
+}
+.logo{
+    width: 150px;
+}
+.user{
+    width: 60px;
+}
+.carrito{
+    width: 60px;
+}
+.main{
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.main > span{
+   padding: 30px;
+}
+.userCarrito{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
