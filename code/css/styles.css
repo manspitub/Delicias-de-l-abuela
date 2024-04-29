@@ -1,6 +1,7 @@
 body{
     background-color: #e8ddcb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 header{
@@ -8,7 +9,7 @@ header{
     display: flex;
     font-size: 30px;
     background-color: #152822;
-    color: white;
+
 }
 .logo{
     width: 150px;
@@ -31,21 +32,35 @@ header{
     margin-left: 20px;
     width: 10%;
     display: flex;
-    justify-content: space-between;
+
 }
 
 footer{
     bottom: 0;
     position: absolute;
-    justify-content: center;
     display: flex;
-}
-footer>div{
-    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #152822;
     padding: 30px;
-
+    width: 100%;
 }
 
-.datosfoot{
+
+footer >.datosfoot{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+footer >.datosfoot>div{
+    padding: 30px 50px 50px;
+    border: 1px solid white;
+    border-radius: 10px;
     justify-content: center;
+    text-align: center;
+    width: 20%;
 }
+
+
+
+
