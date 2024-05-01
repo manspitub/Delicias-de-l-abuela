@@ -11,36 +11,36 @@ header{
     background-color: #152822;
 
 }
-.logo{
+.logoAbuela{
     width: 150px;
     height: 150px;
+}
 
+.abuela{
+    justify-content: center;
+    display: flex;
 }
-.logoinsta{
+.contenedorLogos{
+    display: flex; 
+    flex-direction: column; 
+    width: 15%;
+}
+
+.logos{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.logoRRSS{
     width: 45px;
     height: 45px;
     position: relative;
-    top: 40px;
     clear: right;
+    box-sizing: border-box;
 }
-.logoface{
-    width: 45px;
-    height: 45px;
-    position: relative;
-    top: 40px;
-    clear: right;
-}
-.divlogoinsta{
-    width: 50px;
-    height: 50px;
-}
-.logoX{
-    width: 45px;
-    height: 45px;
-    position: relative;
-    top: 40px;
-    clear: right; 
-}
+
 .user{
     width: 60px;
 }
@@ -59,12 +59,20 @@ header{
     margin-left: 20px;
     width: 10%;
     display: flex;
+}
 
+.mainContent{
+    height: 500px;
+    
+}
+
+.mainContent>p{
+    font-size: 4em;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 footer{
-    bottom: 0;
-    position: absolute;
     display: flex;
     box-sizing: border-box;
     background-color: #152822;
@@ -87,8 +95,16 @@ footer >.datosfoot>div{
     justify-content: center;
     text-align: center;
     width: 20%;
+}
 
+.cookies{
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 
-/*Pititi es del getafe*/
+/*Pititi es del atleti oleeee*/
+/*cobri es del beti oleeee*/
+/*JM es del Sevilla oleeee*/
