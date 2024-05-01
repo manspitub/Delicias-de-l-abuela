@@ -13,6 +13,33 @@ header{
 }
 .logo{
     width: 150px;
+    height: 150px;
+
+}
+.logoinsta{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 40px;
+    clear: right;
+}
+.logoface{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 40px;
+    clear: right;
+}
+.divlogoinsta{
+    width: 50px;
+    height: 50px;
+}
+.logoX{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 40px;
+    clear: right; 
 }
 .user{
     width: 60px;
@@ -50,6 +77,7 @@ footer >.datosfoot{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 footer >.datosfoot>div{
@@ -59,8 +87,8 @@ footer >.datosfoot>div{
     justify-content: center;
     text-align: center;
     width: 20%;
+
 }
 
 
-
-
+/*Pititi es del getafe*/
