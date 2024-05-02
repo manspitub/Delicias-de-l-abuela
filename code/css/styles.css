@@ -1,39 +1,41 @@
-body{
+body {
     background-color: #e8ddcb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
 
-header{
+header {
     justify-content: space-around;
     display: flex;
     font-size: 30px;
     background-color: #152822;
-
 }
-.logoAbuela{
+
+
+.logoAbuela {
     width: 150px;
     height: 150px;
 }
 
-.abuela{
+.abuela {
     justify-content: center;
     display: flex;
 }
-.contenedorLogos{
-    display: flex; 
-    flex-direction: column; 
+
+.contenedorLogos {
+    display: flex;
+    flex-direction: column;
     width: 15%;
 }
 
-.logos{
+.logos {
     display: flex;
     padding: 10px;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.logoRRSS{
+.logoRRSS {
     width: 45px;
     height: 45px;
     position: relative;
@@ -41,38 +43,46 @@ header{
     box-sizing: border-box;
 }
 
-.user{
+.user {
     width: 60px;
 }
-.carrito{
+
+.carrito {
     width: 60px;
 }
-.main{
+
+.main {
     justify-content: space-evenly;
     margin-top: 50px;
 }
-.main > span{
-   padding: 30px;
+
+.main>span {
+    padding: 20px;
+    text-decoration: underline transparent;
+    /* Define la duración de la transición y la función de temporización */
+    transition: text-decoration-color 0.5s ease;
 }
-.userCarrito{
+
+.main>span:hover {
+    text-decoration-color: lightblue;
+}
+
+
+.userCarrito {
     margin-top: 50px;
     margin-left: 20px;
     width: 10%;
     display: flex;
 }
 
-.mainContent{
-    height: 500px;
-    
-}
 
-.mainContent>p{
-    font-size: 4em;
+.mainContent>p {
+    font-size: 5em;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-footer{
+footer {
     display: flex;
     box-sizing: border-box;
     background-color: #152822;
@@ -81,28 +91,38 @@ footer{
 }
 
 
-footer >.datosfoot{
+footer>.datosfoot {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
 }
 
-footer >.datosfoot>div{
-    padding: 30px 50px 50px;
+footer>.datosfoot>div {
+    padding: 20px;
     border: 1px solid white;
     border-radius: 10px;
     justify-content: center;
     text-align: center;
-    width: 20%;
 }
 
-.cookies{
+
+.datosfoot li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+
+
+.cookies {
     font-weight: bold;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    color: black;
 }
+
+
 
 
 /*Pititi es del atleti oleeee*/
