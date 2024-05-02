@@ -122,6 +122,32 @@ footer>.datosfoot>div {
     color: black;
 }
 
+.mainContent{
+    margin: 30px 100px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.presentacion > div{
+    display: flex;
+    text-align: left;
+    width: 200px;
+}
+
+.imgPrincipal img {
+    width: 100%;
+    height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
+    display: block; /* Elimina el espacio adicional por defecto que tienen las imágenes */
+    border-radius: 10%;
+  }
+
 
 
 
