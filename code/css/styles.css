@@ -1,5 +1,5 @@
 body {
-    background-color: #e8ddcb;
+    background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
@@ -131,20 +131,39 @@ footer>.datosfoot>div {
 
 .presentacion{
     display: flex;
+    
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .presentacion > div{
     display: flex;
+    flex-direction: column;
     text-align: left;
-    width: 200px;
+    width: 500px;
 }
+
+.presentacion h1{
+    color: #152822;
+    font-size: 3em;
+}
+
+.presentacion ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .presentacion li::before {
+    content: "\2713"; /* Símbolo de check en Unicode */
+    color: green; /* Color del check */
+    font-size: 20px; /* Tamaño del check */
+    margin-right: 10px; /* Espacio entre el check y el texto */
+  }
 
 .imgPrincipal img {
     width: 100%;
-    height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
-    display: block; /* Elimina el espacio adicional por defecto que tienen las imágenes */
     border-radius: 10%;
   }
 
