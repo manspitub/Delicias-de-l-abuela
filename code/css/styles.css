@@ -4,17 +4,26 @@ body {
     color: white;
 }
 
+
 header {
     justify-content: space-around;
+    position: fixed;
     display: flex;
     font-size: 30px;
     background-color: #152822;
-}
-
+    width: 100%;
+    padding: 20px 0; /* Ajusta el relleno según tus preferencias */
+    left: 0;
+    top: 0;
+  }
+  
+  main {
+    margin-top: 100px; /* Ajusta según la altura del encabezado */
+  }
 
 .logoAbuela {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
 }
 
 .abuela {
@@ -88,6 +97,8 @@ footer {
     background-color: #152822;
     padding: 30px;
     width: 100%;
+    position: absolute;
+    left: 0;
 }
 
 
