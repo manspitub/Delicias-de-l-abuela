@@ -154,7 +154,27 @@ footer>.datosfoot>div {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1.5em;
   }
+
+ .presentacion li {
+    margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+}
+
+
+
+  .presentacion button{
+    
+    color: white;
+    font-size: larger;
+    background-color: rgb(147, 18, 134);
+    width: 60%;
+    height: 70px;
+    border-radius: 10px;
+    
+  }
+
+
   .presentacion li::before {
     content: "\2713"; /* Símbolo de check en Unicode */
     color: green; /* Color del check */
@@ -163,13 +183,21 @@ footer>.datosfoot>div {
   }
 
 .imgPrincipal img {
-    width: 100%;
     border-radius: 10%;
+
   }
+
+  .imgPrincipal{
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
 
 
 
 
 /*Pititi es del atleti oleeee*/
 /*cobri es del beti oleeee*/
-/*JM es del Sevilla oleeee*/
+/*JM es del Real Betis Balompié oleeee*/
