@@ -1,5 +1,5 @@
 body {
-    background-color: #e8ddcb;
+    background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
@@ -121,6 +121,51 @@ footer>.datosfoot>div {
     text-align: center;
     color: black;
 }
+
+.mainContent{
+    margin: 30px 100px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.presentacion{
+    display: flex;
+    
+    justify-content: space-between;
+    width: 60%;
+}
+
+.presentacion > div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+}
+
+.presentacion h1{
+    color: #152822;
+    font-size: 3em;
+}
+
+.presentacion ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .presentacion li::before {
+    content: "\2713"; /* Símbolo de check en Unicode */
+    color: green; /* Color del check */
+    font-size: 20px; /* Tamaño del check */
+    margin-right: 10px; /* Espacio entre el check y el texto */
+  }
+
+.imgPrincipal img {
+    width: 100%;
+    border-radius: 10%;
+  }
 
 
 
