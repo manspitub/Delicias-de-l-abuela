@@ -6,7 +6,7 @@ body {
 
 header {
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     display: flex;
     font-size: 30px;
     background-color: #152822;
@@ -89,14 +89,13 @@ main {
 .mainContent>p {
     font-size: 5em;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 footer {
     display: flex;
     background-color: #152822;
     padding: 30px;
-    width: 100%;
+    margin: -8.4px;
 }
 
 
@@ -132,10 +131,10 @@ footer>.datosfoot>div {
 }
 
 .mainContent {
-    margin: 30px 100px;
+    margin-top: calc(150px);
+    margin-bottom: calc(100px ); 
     display: flex;
     position: relative;
-    top: 50px;
     justify-content: center;
     /* Centra horizontalmente */
     align-items: center;
@@ -146,7 +145,6 @@ footer>.datosfoot>div {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto; /* Centrar la presentación */
   }
   
   .presentacion > div {
