@@ -9,10 +9,30 @@ if (cantidad <= 0) {
     cantidadCarrito.style.display = "none";
 }
 
+var iconoCarrito = document.getElementById("iconoCarrito");
+// Obtiene el aside
 var asideCarrito = document.getElementById("asideCarrito");
 
-// Agrega un evento de clic al elemento cantidadCarrito
-cantidadCarrito.addEventListener("click", function() {
-    // Cambia el estilo del aside al hacer clic
-    asideCarrito.style.display = "block"; // o "flex", dependiendo del tipo de layout que quieras
+// Agrega un evento de clic al ícono del carrito
+iconoCarrito.addEventListener("click", function() {
+    // Verifica si el aside está visible
+    var isVisible = getComputedStyle(asideCarrito).right === "0px";
+
+    // Si el aside está visible, ocúltalo; si no, muéstralo
+    if (isVisible) {
+        asideCarrito.style.right = "-400px"; // Oculta el aside
+    } else {
+        asideCarrito.style.right = "0"; // Muestra el aside
+        
+    }
+});
+
+
+// Obtiene el elemento de cerrar el aside
+var cerrarAside = document.getElementById("cerrarAside");
+
+// Agrega un evento de clic al elemento de cerrar el aside
+cerrarAside.addEventListener("click", function() {
+    asideCarrito.style.right = "-400px"; // Oculta el aside
+    
 });

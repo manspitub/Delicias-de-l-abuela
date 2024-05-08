@@ -30,10 +30,10 @@
     <div class="userCarrito">
       <span><img class="user" src="img/sonrisa.png" alt="user"> </span>
       <span style="width: 300px;"></span>
-      <div class="carrito"> 
+      <span id="iconoCarrito">
         <img class="carrito" src="img/carrito.png" alt="carrito">
-        <div id="cantidadCarrito">0</div> 
-      </div> 
+        <div id="cantidadCarrito">0</div>
+    </span>
     </div>
   </header>
   <div class="mainContent">
@@ -104,6 +104,13 @@
   <div class="cookies">
     © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados. <!--JS poner fecha de hoy-->
   </div>
+  <aside id="asideCarrito" class="aside-carrito">
+    <div id="cerrarAside" class="cerrar-aside">X</div>
+    <div id="contenidoAside">
+      <!-- Contenido del aside aquí -->
+      <div id="mensajeNoProductos" style="display: none;">No hay productos seleccionados.</div>
+  </div>
+</aside>
   <script src="js/carrito.js"></script>
 
 </body>
