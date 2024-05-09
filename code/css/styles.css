@@ -169,6 +169,7 @@ footer {
     display: flex;
     background-color: #152822;
     padding: 30px;
+    
     margin: -8.4px;
 }
 
@@ -218,7 +219,7 @@ footer>.datosfoot>div {
 .presentacion {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
   }
   
   .presentacion > div {
@@ -275,18 +276,56 @@ footer>.datosfoot>div {
 
 .imgPrincipal img {
     border-radius: 10%;
-
 }
 
 .imgPrincipal {
-
+    
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
 
+/* CSS CARRUSEL*/
+.carrusel {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    max-height: 400px; /* Ajusta la altura máxima del carrusel */
+    overflow: hidden;
+    }
+    
+    .carruselImagenes {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+    width: 700px;
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    }
+    
+    .ImagenesCarrusel {
+    width: 500px;
+    }
+    
+    /* CSS para botones de navegación */
+    .carrusel button {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    }
 
+    .mostrarPlatos{
+        font-size: 2.7em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        color: #152822;
+        font-weight: bold;
+    }
 
 
 /*Pititi es del atleti oleeee*/
