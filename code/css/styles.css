@@ -285,7 +285,18 @@ footer>.datosfoot>div {
     align-items: center;
 }
 
+div.formulario{
+    margin-top: 20px;
+    width: 80%;
+    color: black;
+    display: inline;
+    justify-content: center;
+    align-items: center;    
+}
 
+div.formulario label{
+    width: 100px;
+}
 
 
 
