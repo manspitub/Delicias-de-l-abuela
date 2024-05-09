@@ -176,8 +176,7 @@ footer>.datosfoot>div {
 
 
 
-.presentacion button {
-
+button {
     color: white;
     font-size: larger;
     background-color: rgb(147, 18, 134);
@@ -212,20 +211,56 @@ footer>.datosfoot>div {
 }
 
 div.formulario{
-    margin-top: 20px;
-    width: 80%;
+    background-color: #b3663a;
+    margin: 100px;
+    height: 60%;
+    width: 40%;
     color: black;
-    display: inline;
+    display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    flex-direction: column;   
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+}
+form{
+    width: 100%;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    
+
 }
 
-div.formulario label{
-    width: 100px;
+.input{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+    height: 40px;
+    
+}
+
+.input input[type="text"], input[type="password"]{
+    font-size: 25px;
+    background-color: #eadfbc;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+div.sesionGoogle{
+    width: 300px;
 }
 
 
-
-/*Pititi es del atleti oleeee*/
-/*cobri es del beti oleeee*/
-/*JM es del Real Betis Balompié oleeee*/
+#google{
+    
+    border-radius: 40px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    color: black;
+    text-align: right;
+}
