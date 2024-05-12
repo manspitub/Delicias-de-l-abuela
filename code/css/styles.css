@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,16 +7,17 @@ body {
 }
 
 header {
+    
     justify-content: space-around;
     position: fixed;
     display: flex;
     font-size: 30px;
     background-color: #152822;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 4;
 }
 
 main {
@@ -62,25 +65,29 @@ main {
 }
 
 .main {
+    width: 40%;
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    align-items: center;
 }
 
-.main>span {
-    padding: 20px;
+
+a{
+    color: white;
     text-decoration: underline transparent;
-    /* Define la duración de la transición y la función de temporización */
     transition: text-decoration-color 0.5s ease;
+
 }
 
-.main>span:hover {
+a:hover{
     text-decoration-color: lightblue;
 }
 
 
+
+
 .userCarrito {
-    margin-top: 50px;
-    margin-left: 20px;
+    align-items: center;
     width: 10%;
     display: flex;
 }
@@ -317,7 +324,6 @@ footer>.datosfoot>div {
     border: none;
     cursor: pointer;
     }
-
     .mostrarPlatos{
         font-size: 2.7em;
         display: flex;
@@ -326,6 +332,78 @@ footer>.datosfoot>div {
         color: #152822;
         font-weight: bold;
     }
+    
+        /*CSS VALORACIONES*/
+        .tituloValoraciones{
+            text-align: center;
+            font-size: 3em;
+            color: #152822;
+        
+            }
+        
+        .valoraciones > h3 {
+            position: relative;
+            font-weight: bold; /* Pone el texto en negrita */
+            z-index: 3;
+            padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+        }
+        
+        .valoraciones {
+            display: flex;
+            background-color: #ede5d9;
+            padding: 20px; 
+            justify-content: space-between;
+        }
+        
+        .valoraciones > div {
+            position: relative; /* Añade posicionamiento relativo al contenedor del texto */
+            padding: 10px;
+            width: 33%;
+            text-align: center; /* Centra el texto horizontalmente */
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            flex: 1; 
+            margin: 0 30px;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 100px; /* Añadir margen inferior */
+        }
+        
+        .valoraciones > div > h3 {
+            position: relative; /* Añade posicionamiento relativo al texto */
+            z-index: 2; /* Establece un z-index más alto que el de las imágenes de fondo */
+            color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible en la imagen */
+            padding: 10px; /* Añade un poco de espacio alrededor del texto */
+            font-weight: bold; /* Pone el texto en negrita */
+        }
+        
+        .valoraciones > div > h3.textoSobreMorado {
+            color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en la imagen */
+        }
+        
+        .valoraciones .imagenFondo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            border-radius: 19px;
+            z-index: 1;
+        }
+        
+        /*CSS ESTRELLAS*/
+        .valoraciones > div > .estrellas {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .estrellas .estrella {
+            color: gold;
+            font-size: 30px;
+        }
 
 
 /*Pititi es del atleti oleeee*/
