@@ -13,7 +13,7 @@ header {
     font-size: 30px;
     background-color: #152822;
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
     left: 0;
     top: 0;
     z-index: 4;
@@ -474,6 +474,36 @@ div.sesionGoogle img{
             color: gold;
             font-size: 30px;
         }
+/*ABOUT*/
+
+.imgAbout img {
+    border-radius: 10%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.boton-subir {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.boton-subir button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boton-subir button i {
+    font-size: 20px;
+}
 
 
 /*Pititi es del atleti oleeee*/
