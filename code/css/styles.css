@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 body {
@@ -480,3 +481,271 @@ div.sesionGoogle img{
 /*Pititi es del atleti oleeee*/
 /*cobri es del beti oleeee*/
 /*JM es del Real Betis Balompié oleeee*/
+=======
+body {
+    background-color: #ede5d9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+header {
+    justify-content: space-around;
+    position: fixed;
+    display: flex;
+    font-size: 30px;
+    background-color: #152822;
+    width: 100%;
+    padding: 20px 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+    margin-top: 100px;
+    /* Ajusta según la altura del encabezado */
+}
+
+.logoAbuela {
+    width: 110px;
+    height: 120px;
+}
+
+.abuela {
+    justify-content: center;
+    display: flex;
+}
+
+.contenedorLogos {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.logos {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.logoRRSS {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    clear: right;
+    box-sizing: border-box;
+}
+
+.user {
+    width: 60px;
+}
+
+.carrito {
+    width: 60px;
+}
+
+.main {
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.main>span {
+    padding: 20px;
+    text-decoration: underline transparent;
+    /* Define la duración de la transición y la función de temporización */
+    transition: text-decoration-color 0.5s ease;
+}
+
+.main>span:hover {
+    text-decoration-color: lightblue;
+}
+
+
+.userCarrito {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 10%;
+    display: flex;
+}
+
+
+.mainContent>p {
+    font-size: 5em;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: #152822;
+    padding: 30px;
+    margin: -8.4px;
+}
+
+
+footer>.datosfoot {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+footer>.datosfoot>div {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.datosfoot li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+
+
+.cookies {
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.mainContent {
+    margin-top: calc(150px);
+    margin-bottom: calc(100px ); 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.presentacion {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  .presentacion > div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px; /* Cambiar width a max-width */
+    width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+  }
+
+.presentacion h1 {
+    color: #152822;
+    font-size: 3em;
+}
+
+.presentacion ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.presentacion li {
+    margin-bottom: 10px;
+    /* Espacio entre cada elemento de la lista */
+}
+
+
+
+button {
+    color: white;
+    font-size: larger;
+    background-color: rgb(147, 18, 134);
+    width: 60%;
+    height: 70px;
+    border-radius: 10px;
+
+}
+
+
+.presentacion li::before {
+    content: "\2713";
+    /* Símbolo de check en Unicode */
+    color: green;
+    /* Color del check */
+    font-size: 20px;
+    /* Tamaño del check */
+    margin-right: 10px;
+    /* Espacio entre el check y el texto */
+}
+
+.imgPrincipal img {
+    border-radius: 10%;
+
+}
+
+.imgPrincipal {
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+div.formulario{
+    background-color: #b3663a;
+    margin: 100px;
+    height: 60%;
+    width: 40%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;   
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+}
+form{
+    width: 100%;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.input{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+    height: 40px;
+    
+}
+
+.input input[type="text"], input[type="password"]{
+    font-size: 25px;
+    background-color: #eadfbc;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+div.sesionGoogle{
+    width: 300px;
+}
+
+
+#google{
+    
+    border-radius: 40px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    color: black;
+    text-align: right;
+}
+>>>>>>> a0ade1c553952df7864f29b658ed3c9488bf080a
