@@ -87,7 +87,7 @@ a:hover{
 
 .userCarrito {
     align-items: center;
-    width: 10%;
+    width: 8%;
     display: flex;
 }
 
@@ -293,7 +293,7 @@ footer>.datosfoot>div {
 
 div.formulario{
     opacity: 0.7;
-    background-color: rgba(179, 102, 58, 0.9); /* #b3663a con 50% de opacidad */
+    background-color: rgba(35, 145, 13, 0.9); /* #b3663a con 50% de opacidad */
     margin: 100px;
     height: 60%;
     width: 40%;
@@ -373,6 +373,7 @@ div.sesionGoogle img{
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease-in-out;
+
     width: 400px;
     height: 300px;
     justify-content: center; /* Centra horizontalmente las imágenes */
@@ -386,10 +387,12 @@ div.sesionGoogle img{
     
     /* CSS para botones de navegación */
     .carrusel button {
-    width: 200px;
+    width: 40px;
+    height: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     cursor: pointer;
+    margin-left: 0;
     }
     .mostrarPlatos{
         font-size: 2.7em;
