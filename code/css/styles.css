@@ -373,13 +373,15 @@ div.sesionGoogle img{
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease-in-out;
-    width: 700px;
+    width: 400px;
+    height: 300px;
     justify-content: center; /* Centra horizontalmente las imágenes */
     align-items: center; /* Centra verticalmente las imágenes */
     }
     
     .ImagenesCarrusel {
-    width: 500px;
+    width: 400px;
+    height: 300px;
     }
     
     /* CSS para botones de navegación */
@@ -505,6 +507,55 @@ div.sesionGoogle img{
     font-size: 20px;
 }
 
+/*Productos*/
+
+.tipoPlatos{
+    display: flex;
+    width: 100%;
+}
+
+.tipoPlatos ul{
+    display: flex;
+    gap: 20px;
+}
+
+.tipoPlatos li{
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius:20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.linea {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+    margin: 30px;
+}
+
+.categoriaPlatos{
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    font-family: Fraunces, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.platos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.platos li{
+    border: 2px solid black;
+    padding: 200px;
+}
 
 /*Pititi es del atleti oleeee*/
 /*cobri es del beti oleeee*/
