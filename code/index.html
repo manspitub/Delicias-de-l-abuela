@@ -1,118 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicias de l´abuela</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delicias de l´abuela</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    crossorigin="anonymous" />
-
-</head>
-
-<body>
-  <!--Etiqueta para header-->
-  <main>
-  </main>
-  <header>
-    <div>
-      <span>
-        <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
-        <!-- CAMBIAR FORMATO A PNG BUENO -->
-      </span>
-    </div>
-    <div class="main">
-      <span>Home</span>
-      <span>Productos</span>
-      <span>About</span>
-    </div>
-    <div class="userCarrito">
-      <span><img class="user" src="img/sonrisa.png" alt="user"> </span>
-      <span style="width: 300px;"></span>
-      <span id="iconoCarrito">
-        <img class="carrito" src="img/carrito.png" alt="carrito">
-        <div id="cantidadCarrito">0</div>
-    </span>
-    </div>
-  </header>
-  <div class="mainContent">
-    <div class="presentacion">
+  <body>
+    <!--Etiqueta para header-->
+    <main></main>
+    <header>
       <div>
-        <h1>Comida casera para toda la semana.</h1>
-        <ul>
-          <li>Busca en nuestro catálogo.</li>
-          <li>Realiza tu pedido en menos de 5 minutos.</li>
-          <li>Relájate, l'abuela te cocina.</li>
-          <li>Envíos a domicilio.</li>
-        </ul>
-        <button>¡Haz ya tu pedido!</button>
+        <span>
+          <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
+          <!-- CAMBIAR FORMATO A PNG BUENO -->
+        </span>
       </div>
-      <div class="imgPrincipal">
-        <img src="img/imagenPrincipal.png" alt="" srcset="">
+      <div class="main">
+        <a href="index.html"><span>Home</span></a>
+        <a href="productos.html"><span>Productos</span></a>
+        <a href="about.html"><span>About</span></a>
       </div>
-    </div>
-  </div>
+      <div class="userCarrito">
+        <a href="inicio-sesion.html">
+          <span><img class="user" src="img/LOGO_USUARIO.png" alt="user" /> </span>
+        </a>
 
-  <footer>
-    <div class="contenedorLogos">
-      <div class="abuela">
-        <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
+        <span style="width: 300px"></span>
+        <span id="iconoCarrito">
+          <img class="carrito" src="img/CARRITO_BUENO.png" alt="carrito" />
+          <div id="cantidadCarrito">0</div>
+        </span>
       </div>
-      <div class="logos"> <!--Cambiar el href para poner urls-->
-        <img class="logoRRSS" src="img/instagram.png" alt="insta">
-        <img class="logoRRSS" src="img/facebook.png" alt="facebook">
-        <img class="logoRRSS" src="img/twitter.png" alt="equis">
-      </div>
-    </div>
-
-    <div class="datosfoot">
-      <div>
-        <h3>Contacto</h3>
-        <li>Telefonos de contacto:
-        </li>
-        <li>
-          +34 679 640 570
-        </li>
-        <li>
-          E-mail:
-        </li>
-        <li>
-          deliciasDelAbuela@delicias.es
-        </li>
-      </div>
-      <div>
-        <h3>Información</h3>
+    </header>
+    <div class="mainContent">
+      <div class="presentacion">
         <div>
-          <li>Sobre Nosotros</li> <!--Añadir hipervínculo-->
-          <li>Política de cookies</li>
-          <li>Publicidad</li>
-          <li>Afiliados</li>
-          <li>Preguntas Frecuentes</li>
+          <h1>Comida casera para toda la semana.</h1>
+          <ul>
+            <li>Busca en nuestro catálogo.</li>
+            <li>Realiza tu pedido en menos de 5 minutos.</li>
+            <li>Relájate, l'abuela te cocina.</li>
+            <li>Envíos a domicilio.</li>
+          </ul>
+          <button>¡Haz ya tu pedido!</button>
+        </div>
+        <div class="imgPrincipal">
+          <img src="img/imagenPrincipal.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+    <div class="mostrarPlatos">Nuestros mejores platos</div>
+    <div class="carrusel">
+      <button id="btnAnterior"><</button>
+
+      <div class="carruselImagenes">
+        <img
+          class="ImagenesCarrusel"
+          src="img/img.platos/chicken-steak-topped-with-white-sesame-peas-tomatoes-broccoli-pumpkin-white-plate.jpg"
+          alt=""
+        />
+        <img
+          class="ImagenesCarrusel"
+          src="img/img.platos/fried-pancake-with-tomato-herbs.jpg"
+          alt=""
+        />
+        <img
+          class="ImagenesCarrusel"
+          src="img/img.platos/pasta-dish-restaurant-table.jpg"
+          alt=""
+        />
+        <img
+          class="ImagenesCarrusel"
+          src="img/img.platos/ensalada.jpeg"
+          alt=""
+        />
+        <img
+          class="ImagenesCarrusel"
+          src="img/img.platos/espaguetis.jpeg"
+          alt=""
+        />
+      </div>
+      <button id="btnSiguiente">></button>
+    </div>
+
+    <script src="../code/js/carrusel.js"></script>
+
+    <h2 class="tituloValoraciones">Valoraciones de nuestros clientes: </h2>
+    <div class="valoraciones">
+      <div class="div1">
+        <div class="imagenFondo" style="background-image: url('img/img.platos/photo-1539136788836-5699e78bfc75.jpg');"></div>
+        <h3>"Todas las comidas muy ricas y con sabor a comida de las que hacemos en casa."</h3>
+        <div class="estrellas">
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+        </div>
+      </div>
+      <div class="div2">
+        <div class="imagenFondo" style="background-image: url('img/img.platos/photo-1539735776517-befcae86494d.jpg');"></div>
+        <h3 class="textoSobreMorado">"Ingredientes de calidad. Platos completos, con raciones abundantes."</h3>
+        <div class="estrellas">
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9734;</span>
+        </div>
+      </div>
+      <div class="div3">
+        <div class="imagenFondo" style="background-image: url('img/img.platos/photo-1539735257177-0d3949225f96.jpg')"></div>
+        <h3>"Calidad de productos y sabor. Además sabes con detalle los ingredientes y los nutrientes."</h3>
+        <div class="estrellas">
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9733;</span>
+          <span class="estrella">&#9734;</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="contenedorLogos">
+        <div class="abuela">
+          <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
+        </div>
+        <div class="logos">
+          <!--Cambiar el href para poner urls-->
+          <img class="logoRRSS" src="img/instagram.png" alt="insta" />
+          <img class="logoRRSS" src="img/facebook.png" alt="facebook" />
+          <img class="logoRRSS" src="img/twitter.png" alt="equis" />
         </div>
       </div>
 
-      <div>
-        <h3>Empresa</h3>
-        <li>Nuestros envíos</li>
-        <li>Eat local, eat fresh, eat green</li>
-        <li>Cómo trabajamos</li>
+      <div class="datosfoot">
+        <div>
+          <h3>Contacto</h3>
+          <li>Telefonos de contacto:</li>
+          <li>+34 679 640 570</li>
+          <li>E-mail:</li>
+          <li>deliciasDelAbuela@delicias.es</li>
+        </div>
+        <div>
+          <h3>Información</h3>
+          <div>
+            <li>Sobre Nosotros</li>
+            <!--Añadir hipervínculo-->
+            <li>Política de cookies</li>
+            <li>Publicidad</li>
+            <li>Afiliados</li>
+            <li>Preguntas Frecuentes</li>
+          </div>
+        </div>
+
+        <div>
+          <h3>Empresa</h3>
+          <li>Nuestros envíos</li>
+          <li>Eat local, eat fresh, eat green</li>
+          <li>Cómo trabajamos</li>
+          <li><a href="url_del_feed_rss"><img src="rss-icon.png" alt="RSS Feed"></a>
+          </li>
+        </div>
       </div>
-
+    </footer>
+    <div class="cookies">
+      © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
+      <!--JS poner fecha de hoy-->
     </div>
-  </footer>
-  <div class="cookies">
-    © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados. <!--JS poner fecha de hoy-->
-  </div>
-  <aside id="asideCarrito" class="aside-carrito">
-    <div id="cerrarAside" class="cerrar-aside">X</div>
-    <div id="contenidoAside">
+
+    <aside id="asideCarrito" class="aside-carrito">
+      <div id="cerrarAside" class="cerrar-aside">X</div>
+
       <!-- Contenido del aside aquí -->
-      <div id="mensajeNoProductos" style="display: none;">No hay productos seleccionados.</div>
-  </div>
-</aside>
-  <script src="js/carrito.js"></script>
+      <div id="mensajeNoProductos">
+        <div>No hay productos seleccionados.</div>
+        <div>
+          <button>Seguir comprando</button>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
 
-</body>
-
+    <script src="js/carrito.js"></script>
+  </body>
 </html>

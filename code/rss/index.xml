@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Delicias de l'Abuela</title>
+    <description>Comida casera para toda la semana. Encuentra los mejores platos y haz tu pedido en Delicias de l'Abuela.</description>
+    <link>http://tudominio.com</link>
+    
+    <!-- A continuación, cada entrada de tu página se representará como un ítem en el feed -->
+    
+    <!-- Primer artículo -->
+    <item>
+      <title>Título del primer artículo</title>
+      <description>Descripción del primer artículo.</description>
+      <link>http://tudominio.com/articulo1.html</link>
+      <pubDate>Miércoles, 13 de Mayo de 2024</pubDate>
+    </item>
+    
+    <!-- Segundo artículo -->
+    <item>
+      <title>Título del segundo artículo</title>
+      <description>Descripción del segundo artículo.</description>
+      <link>http://tudominio.com/articulo2.html</link>
+      <pubDate>Miér

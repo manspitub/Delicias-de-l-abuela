@@ -1,3 +1,4 @@
+
 body {
     background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,16 +6,17 @@ body {
 }
 
 header {
+    
     justify-content: space-around;
     position: fixed;
     display: flex;
     font-size: 30px;
     background-color: #152822;
     width: 100%;
-    padding: 20px 0;
+    padding: 0;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 4;
 }
 
 main {
@@ -62,26 +64,30 @@ main {
 }
 
 .main {
+    width: 40%;
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    align-items: center;
 }
 
-.main>span {
-    padding: 20px;
+
+a{
+    color: white;
     text-decoration: underline transparent;
-    /* Define la duración de la transición y la función de temporización */
     transition: text-decoration-color 0.5s ease;
+
 }
 
-.main>span:hover {
+a:hover{
     text-decoration-color: lightblue;
 }
 
 
+
+
 .userCarrito {
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 10%;
+    align-items: center;
+    width: 8%;
     display: flex;
 }
 
@@ -112,7 +118,44 @@ main {
     transition: right 0.3s ease; /* Transición para suavizar el despliegue */
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    z-index: 999; /* Coloca el overlay por encima de todo, excepto del aside */
+    display: none; /* Inicialmente oculto */
+}
 
+
+
+#mensajeNoProductos{
+    display: none;
+    width: 100%;
+    color: #152822;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mueve el div al centro */
+    /* Estilos adicionales para el div centrado */
+}
+
+#mensajeNoProductos div{
+    margin: 0 60px 20px; /* Establece márgenes automáticos para centrar */
+}
+
+
+
+
+
+
+.aside-carrito.blur-none {
+    filter: none; /* Elimina el desenfoque del aside */
+}
 
 .cerrar-aside {
     color: black;
@@ -132,6 +175,7 @@ footer {
     display: flex;
     background-color: #152822;
     padding: 30px;
+    
     margin: -8.4px;
 }
 
@@ -181,7 +225,7 @@ footer>.datosfoot>div {
 .presentacion {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
   }
   
   .presentacion > div {
@@ -213,12 +257,12 @@ footer>.datosfoot>div {
 
 
 
-.presentacion button {
+ button {
 
     color: white;
     font-size: larger;
     background-color: rgb(147, 18, 134);
-    width: 60%;
+    width: 70%;
     height: 70px;
     border-radius: 10px;
 
@@ -238,19 +282,283 @@ footer>.datosfoot>div {
 
 .imgPrincipal img {
     border-radius: 10%;
-
 }
 
 .imgPrincipal {
-
+    
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
+div.formulario{
+    opacity: 0.7;
+    background-color: rgba(35, 145, 13, 0.9); /* #b3663a con 50% de opacidad */
+    margin: 100px;
+    height: 60%;
+    width: 40%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;   
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+}
+form{
+    
+    width: 100%;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
 
 
+}
 
+.input{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+    height: 40px;
+
+}
+
+.input input[type="text"], input[type="password"]{
+    font-size: 25px;
+    background-color: #eadfbc;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+div.sesionGoogle{
+    text-align: center;
+    width: 300px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+div.sesionGoogle img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    margin-right: 20px;
+}
+
+#google{
+    padding: auto;
+    text-align: right;
+    border-radius: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    
+}
+
+
+/* CSS CARRUSEL*/
+.carrusel {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    max-height: 400px; /* Ajusta la altura máxima del carrusel */
+    overflow: hidden;
+    }
+    
+    .carruselImagenes {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+
+    width: 400px;
+    height: 300px;
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    }
+    
+    .ImagenesCarrusel {
+    width: 400px;
+    height: 300px;
+    }
+    
+    /* CSS para botones de navegación */
+    .carrusel button {
+    width: 40px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    margin-left: 0;
+    }
+    .mostrarPlatos{
+        font-size: 2.7em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        color: #152822;
+        font-weight: bold;
+    }
+    
+        /*CSS VALORACIONES*/
+        .tituloValoraciones{
+            text-align: center;
+            font-size: 3em;
+            color: #152822;
+        
+            }
+        
+        .valoraciones > h3 {
+            position: relative;
+            font-weight: bold; /* Pone el texto en negrita */
+            z-index: 3;
+            padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+        }
+        
+        .valoraciones {
+            display: flex;
+            background-color: #ede5d9;
+            padding: 20px; 
+            justify-content: space-between;
+        }
+        
+        .valoraciones > div {
+            position: relative; /* Añade posicionamiento relativo al contenedor del texto */
+            padding: 10px;
+            width: 33%;
+            text-align: center; /* Centra el texto horizontalmente */
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            flex: 1; 
+            margin: 0 30px;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 100px; /* Añadir margen inferior */
+            transition: transform 0.3s ease;
+        }
+
+        .valoraciones > div:hover {
+            transform: scale(1.1);
+        }
+        
+        .valoraciones > div > h3 {
+            position: relative; /* Añade posicionamiento relativo al texto */
+            z-index: 2; /* Establece un z-index más alto que el de las imágenes de fondo */
+            color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible en la imagen */
+            padding: 10px; /* Añade un poco de espacio alrededor del texto */
+            font-weight: bold; /* Pone el texto en negrita */
+        }
+        
+        .valoraciones > div > h3.textoSobreMorado {
+            color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en la imagen */
+        }
+        
+        .valoraciones .imagenFondo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            border-radius: 19px;
+            z-index: 1;
+        }
+        
+        /*CSS ESTRELLAS*/
+        .valoraciones > div > .estrellas {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .estrellas .estrella {
+            color: gold;
+            font-size: 30px;
+        }
+/*ABOUT*/
+
+.imgAbout img {
+    border-radius: 10%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.boton-subir {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.boton-subir button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boton-subir button i {
+    font-size: 20px;
+}
+
+/*Productos*/
+
+.tipoPlatos{
+    display: flex;
+    width: 100%;
+}
+
+.tipoPlatos ul{
+    display: flex;
+    gap: 20px;
+}
+
+.tipoPlatos li{
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius:20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.linea {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+    margin: 30px;
+}
+
+.categoriaPlatos{
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    font-family: Fraunces, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.platos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.platos li{
+    border: 2px solid black;
+    padding: 200px;
+}
 
 /*Pititi es del atleti oleeee*/
 /*cobri es del beti oleeee*/
