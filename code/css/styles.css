@@ -368,42 +368,55 @@ div.sesionGoogle img{
 }
 
 
-/* CSS CARRUSEL*/
 .carrusel {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
-    max-height: 400px; /* Ajusta la altura máxima del carrusel */
+    position: relative;
+    max-width: 100%;
+    max-height: 100%; /* Ajusta según sea necesario */
     overflow: hidden;
-    }
-    
-    .carruselImagenes {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.3s ease-in-out;
+}
 
-    width: 400px;
-    height: 300px;
-    justify-content: center; /* Centra horizontalmente las imágenes */
-    align-items: center; /* Centra verticalmente las imágenes */
-    }
-    
-    .ImagenesCarrusel {
-    width: 400px;
-    height: 300px;
-    }
-    
-    /* CSS para botones de navegación */
-    .carrusel button {
-    width: 40px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
+.carruselImagenes {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    width: auto;
+}
+
+.ImagenesCarrusel {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#btnAnterior,
+#btnSiguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
-    margin-left: 0;
-    }
+    z-index: 1;
+    width: 50px;
+}
+
+#btnAnterior {
+    left: 0px;
+}
+
+#btnSiguiente {
+    right: 0px;
+}
+
+#btnAnterior:hover,
+#btnSiguiente:hover {
+    background: rgba(0, 0, 0, 1); /* Cambia la opacidad al 100% */
+}
+
+
+
     .mostrarPlatos{
         font-size: 2.7em;
         display: flex;
@@ -412,7 +425,6 @@ div.sesionGoogle img{
         color: #152822;
         font-weight: bold;
     }
-    
         /*CSS VALORACIONES*/
         .tituloValoraciones{
             text-align: center;
