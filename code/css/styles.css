@@ -291,6 +291,9 @@ footer>.datosfoot>div {
     align-items: center;
 }
 
+
+/*FORMULARIO DE INICIO DE SESIÓN*/
+
 div.formulario{
     opacity: 0.7;
     background-color: rgba(35, 145, 13, 0.9); /* #b3663a con 50% de opacidad */
@@ -334,10 +337,15 @@ form{
 }
 
 div.sesionGoogle{
+    height: 50px;
     text-align: center;
     width: 300px;
-    margin: 0 10px;
+    margin-top: 20px;
     vertical-align: middle;
+}
+
+div.sesionGoogle a{
+    width: 100%;
 }
 
 div.sesionGoogle img{
@@ -348,6 +356,7 @@ div.sesionGoogle img{
 }
 
 #google{
+    height: 80%;
     padding: auto;
     text-align: right;
     border-radius: 40px;
