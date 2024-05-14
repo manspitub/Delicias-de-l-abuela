@@ -212,6 +212,7 @@ footer>.datosfoot>div {
 }
 
 .mainContent {
+    margin: 190px;
     margin-top: calc(150px);
     margin-bottom: calc(100px ); 
     display: flex;
