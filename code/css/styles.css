@@ -508,6 +508,7 @@ div.sesionGoogle img{
 }
 
 .boton-subir button {
+    width: 100%;
     background-color: #007bff;
     color: white;
     border: none;
