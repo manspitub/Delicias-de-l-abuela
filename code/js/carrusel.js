@@ -1,9 +1,9 @@
 let sliderCarrusel = document.querySelector(".carruselImagenes");
-let imagenes = sliderCarrusel.querySelectorAll(".ImagenesCarrusel");
+let imagenes = sliderCarrusel.querySelectorAll(".imagenContainer");
 let index = 0;
 
-// Función para mostrar las imágenes actuales y ocultar las demás
-function mostrarImagenes(index) {
+// Función para mostrar las tres imágenes actuales
+function mostrarTresImagenes(index) {
     for (let i = 0; i < imagenes.length; i++) {
         if (i >= index && i < index + 3) {
             imagenes[i].style.display = "block";
@@ -15,24 +15,24 @@ function mostrarImagenes(index) {
 
 // Función para avanzar al siguiente slide
 function siguienteSlide() {
-    index += 3;
-    if (index >= imagenes.length) {
+    index++;
+    if (index >= imagenes.length - 2) {
         index = 0;
     }
-    mostrarImagenes(index);
+    mostrarTresImagenes(index);
 }
 
 // Función para retroceder al slide anterior
 function anteriorSlide() {
-    index -= 3;
+    index--;
     if (index < 0) {
-        index = Math.floor((imagenes.length - 1) / 3) * 3;
+        index = imagenes.length - 3;
     }
-    mostrarImagenes(index);
+    mostrarTresImagenes(index);
 }
 
-// Mostrar las primeras imágenes al cargar la página
-mostrarImagenes(index);
+// Mostrar las primeras tres imágenes al cargar la página
+mostrarTresImagenes(index);
 
 // Event listeners para los botones de avanzar y retroceder
 document.querySelector("#btnSiguiente").addEventListener("click", siguienteSlide);
