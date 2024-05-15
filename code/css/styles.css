@@ -641,6 +641,7 @@ div.sesionGoogle img{
 }
 
 .alergenos {
+    display: none;
     margin-bottom: 20px;
 }
 
@@ -664,6 +665,7 @@ div.sesionGoogle img{
 /*Modal*/
 
 .modal {
+    color: black;
     display: none;
     position: fixed;
     z-index: 9999;
@@ -711,6 +713,24 @@ div.sesionGoogle img{
   
   .modal-price {
     font-weight: bold;
+  }
+
+ /* Estilos para los alérgenos en el modal */
+    .modal-alergenos {
+    margin-top: 20px;
+  }
+  
+  .modal-alergenos h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-alergenos ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .modal-alergenos li {
+    margin-bottom: 5px;
   }
   
 
