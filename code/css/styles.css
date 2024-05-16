@@ -1,35 +1,646 @@
-body{
-    background-color: #e8ddcb;
+
+body {
+    background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
-header{
+header {
+    
     justify-content: space-around;
+    position: fixed;
     display: flex;
     font-size: 30px;
     background-color: #152822;
-    color: white;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: 4;
 }
-.logo{
-    width: 150px;
+
+main {
+    margin-top: 100px;
+    /* Ajusta según la altura del encabezado */
 }
-.user{
-    width: 60px;
+
+.logoAbuela {
+    width: 110px;
+    height: 120px;
 }
-.carrito{
-    width: 60px;
+
+.abuela {
+    justify-content: center;
+    display: flex;
 }
-.main{
+
+.contenedorLogos {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.logos {
+    display: flex;
+    padding: 10px;
+    width: 100%;
     justify-content: space-evenly;
-    margin-top: 50px;
 }
-.main > span{
-   padding: 30px;
+
+.logoRRSS {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    clear: right;
+    box-sizing: border-box;
 }
-.userCarrito{
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 10%;
+
+.user {
+    width: 60px;
+}
+
+.carrito {
+    width: 60px;
+}
+
+.main {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+a{
+    color: white;
+    text-decoration: underline transparent;
+    transition: text-decoration-color 0.5s ease;
+
+}
+
+a:hover{
+    text-decoration-color: lightblue;
+}
+
+
+
+
+.userCarrito {
+    align-items: center;
+    width: 8%;
+    display: flex;
+}
+
+.carrito{
+    position: relative;
+    display: inline-block;
+}
+
+.cantidadCarrito{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(147, 18, 134);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.aside-carrito {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Oculta el aside fuera del viewport */
+    width: 400px; /* Ancho del aside */
+    height: 100%; /* Altura del aside */
+    background-color: #fff; /* Color de fondo del aside */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    transition: right 0.3s ease; /* Transición para suavizar el despliegue */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    z-index: 999; /* Coloca el overlay por encima de todo, excepto del aside */
+    display: none; /* Inicialmente oculto */
+}
+
+
+
+#mensajeNoProductos{
+    display: none;
+    width: 100%;
+    color: #152822;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mueve el div al centro */
+    /* Estilos adicionales para el div centrado */
+}
+
+#mensajeNoProductos div{
+    margin: 0 60px 20px; /* Establece márgenes automáticos para centrar */
+}
+
+
+
+
+
+
+.aside-carrito.blur-none {
+    filter: none; /* Elimina el desenfoque del aside */
+}
+
+.cerrar-aside {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.mainContent>p {
+    font-size: 5em;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: #152822;
+    padding: 30px;
+    
+    margin: -8.4px;
+}
+
+
+footer>.datosfoot {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+footer>.datosfoot>div {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.datosfoot li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+
+
+.cookies {
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.mainContent {
+    margin: 190px;
+    margin-top: calc(150px);
+    margin-bottom: calc(100px ); 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.presentacion {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+  }
+  
+  .presentacion > div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px; /* Cambiar width a max-width */
+    width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+  }
+
+.presentacion h1 {
+    color: #152822;
+    font-size: 3em;
 }
+
+.presentacion ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.presentacion li {
+    margin-bottom: 10px;
+    /* Espacio entre cada elemento de la lista */
+}
+
+
+
+ button {
+
+    color: white;
+    font-size: larger;
+    background-color: rgb(147, 18, 134);
+    width: 70%;
+    height: 70px;
+    border-radius: 10px;
+
+}
+
+
+.presentacion li::before {
+    content: "\2713";
+    /* Símbolo de check en Unicode */
+    color: green;
+    /* Color del check */
+    font-size: 20px;
+    /* Tamaño del check */
+    margin-right: 10px;
+    /* Espacio entre el check y el texto */
+}
+
+.imgPrincipal img {
+    border-radius: 10%;
+}
+
+.imgPrincipal {
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+/*FORMULARIO DE INICIO DE SESIÓN*/
+
+div.formulario{
+    opacity: 0.7;
+    background-color: rgba(35, 145, 13, 0.9); /* #b3663a con 50% de opacidad */
+    margin: 100px;
+    height: 60%;
+    width: 40%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;   
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+}
+form{
+    
+    width: 100%;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.input{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+    height: 40px;
+
+}
+
+.input input[type="text"], input[type="password"]{
+    font-size: 25px;
+    background-color: #eadfbc;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+div.sesionGoogle{
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+div.sesionGoogle a{
+    width: 100%;
+}
+
+div.sesionGoogle img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    margin-right: 20px;
+}
+
+#google{
+    height: 80%;
+    padding: auto;
+    text-align: right;
+    border-radius: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    
+}
+
+/*CSS CARRUSEL*/
+.carrusel {
+    position: relative;
+    max-width: 100%;
+    max-height: 600px; /* Ajusta según sea necesario */
+    overflow: hidden;
+}
+
+.carruselImagenes {
+    display: flex;
+    transition: transform 0.5s ease; /* Ajusta la duración y la función de transición */
+    position: relative;
+}
+
+.imagenContainer {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px; /* Espacio entre las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    position: relative;
+    overflow: hidden; /* Asegura que el borde no se extienda fuera de la imagen */
+    border: 2px solid transparent; /* Borde transparente inicial */
+    transition: border-color 0.3s ease; /* Transición para el cambio de color del borde */
+}
+
+.imagenContainer:hover {
+    border-color: rgba(0, 0, 0, 0.5); /* Cambia el color del borde al pasar el mouse */
+}
+
+.ImagenesCarrusel {
+    width: 640px;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagenContainer:hover .descripcion {
+    opacity: 1;
+}
+
+#btnAnterior,
+#btnSiguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+}
+
+#btnAnterior {
+    left: 0px;
+}
+
+#btnSiguiente {
+    right: 0px;
+}
+
+.botonesCarrusel:hover {
+    background: rgba(0, 0, 0, 1); 
+}
+
+.mostrarPlatos{
+    font-size: 2.7em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    color: #152822;
+    font-weight: bold;
+  }
+        /*CSS VALORACIONES*/
+        .tituloValoraciones{
+            text-align: center;
+            font-size: 3em;
+            color: #152822;
+            margin-top: 60px;
+        
+            }
+        
+        .valoraciones > h3 {
+            position: relative;
+            font-weight: bold; /* Pone el texto en negrita */
+            z-index: 3;
+            padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+        }
+        
+        .valoraciones {
+            display: flex;
+            background-color: #ede5d9;
+            padding: 20px; 
+            justify-content: space-between;
+        }
+        
+        .valoraciones > div {
+            position: relative; /* Añade posicionamiento relativo al contenedor del texto */
+            padding: 10px;
+            width: 33%;
+            text-align: center; /* Centra el texto horizontalmente */
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            flex: 1; 
+            margin: 0 30px;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 100px; /* Añadir margen inferior */
+            transition: transform 0.3s ease;
+        }
+
+        .valoraciones > div:hover {
+            transform: scale(1.1);
+        }
+        
+        .valoraciones > div > h3 {
+            position: relative; /* Añade posicionamiento relativo al texto */
+            z-index: 2; /* Establece un z-index más alto que el de las imágenes de fondo */
+            color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible en la imagen */
+            padding: 10px; /* Añade un poco de espacio alrededor del texto */
+            font-weight: bold; /* Pone el texto en negrita */
+        }
+        
+        .valoraciones > div > h3.textoSobreMorado {
+            color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en la imagen */
+        }
+        
+        .valoraciones .imagenFondo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            border-radius: 19px;
+            z-index: 1;
+        }
+        
+        /*CSS ESTRELLAS*/
+        .valoraciones > div > .estrellas {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .estrellas .estrella {
+            color: gold;
+            font-size: 30px;
+        }
+/*ABOUT*/
+
+.imgAbout img {
+    border-radius: 10%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.boton-subir {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.boton-subir button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boton-subir button i {
+    font-size: 20px;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mapa h2 {
+    color: black;
+}
+
+/*Productos*/
+
+.tipoPlatos{
+    display: flex;
+    width: 100%;
+}
+
+.tipoPlatos ul{
+    display: flex;
+    gap: 20px;
+}
+
+.tipoPlatos li{
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius:20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.linea {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+    margin: 30px;
+}
+
+.categoriaPlatos{
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    font-family: Fraunces, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.producto1 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.descripcionProducto {
+    flex: 1;
+}
+
+.fotoProducto {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px; /* Muevo la imagen a la derecha */
+}
+
+.descripcionProducto p {
+    margin-bottom: 20px;
+}
+
+.alergenos {
+    margin-bottom: 20px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+
+
