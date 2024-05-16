@@ -374,11 +374,15 @@ div.sesionGoogle img{
 
 /*FORMULARIO DE ERRORES*/
 
-.errores{
-    display: none;
-    border: 1px red;
+div.errores{
+    float: unset;
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: 1px solid red;
     color: red;
 }
+
 .rayaO{
     margin-top: 30px;
     margin-bottom: 20px;
