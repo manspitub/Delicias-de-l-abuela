@@ -367,57 +367,119 @@ div.sesionGoogle img{
     
 }
 
-
-/* CSS CARRUSEL*/
+/*CSS CARRUSEL*/
 .carrusel {
-    margin-bottom: 30px;
+    position: relative;
+    max-width: 100%;
+    max-height: 600px; /* Ajusta según sea necesario */
+    overflow: hidden;
+}
+
+.carruselImagenes {
+    display: flex;
+    transition: transform 0.5s ease; /* Ajusta la duración y la función de transición */
+    position: relative;
+}
+
+.imagenContainer {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px; /* Espacio entre las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    position: relative;
+    overflow: hidden; /* Asegura que el borde no se extienda fuera de la imagen */
+    border: 2px solid transparent; /* Borde transparente inicial */
+    transition: border-color 0.3s ease; /* Transición para el cambio de color del borde */
+}
+
+.imagenContainer:hover {
+    border-color: rgba(0, 0, 0, 0.5); /* Cambia el color del borde al pasar el mouse */
+}
+
+.ImagenesCarrusel {
+    width: 640px;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+}
+
+.precio{
+    border-radius: 10px; /* Bordes redondeados */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10%;
+    background-color: rgb(148, 37, 204);
+    color: white;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagenContainer:hover .descripcion {
+    opacity: 1;
+}
+
+.imagenContainer:hover .precio {
+    opacity: 1;
+}
+
+#btnAnterior,
+#btnSiguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+}
+
+#btnAnterior {
+    left: 0px;
+}
+
+#btnSiguiente {
+    right: 0px;
+}
+
+.botonesCarrusel:hover {
+    background: rgba(0, 0, 0, 1); 
+}
+
+.mostrarPlatos{
+    font-size: 2.7em;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
-    max-height: 400px; /* Ajusta la altura máxima del carrusel */
-    overflow: hidden;
-    }
-    
-    .carruselImagenes {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.3s ease-in-out;
-
-    width: 400px;
-    height: 300px;
-    justify-content: center; /* Centra horizontalmente las imágenes */
-    align-items: center; /* Centra verticalmente las imágenes */
-    }
-    
-    .ImagenesCarrusel {
-    width: 400px;
-    height: 300px;
-    }
-    
-    /* CSS para botones de navegación */
-    .carrusel button {
-    width: 40px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    margin-left: 0;
-    }
-    .mostrarPlatos{
-        font-size: 2.7em;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        color: #152822;
-        font-weight: bold;
-    }
-    
+    margin-bottom: 60px;
+    color: #152822;
+    font-weight: bold;
+  }
         /*CSS VALORACIONES*/
         .tituloValoraciones{
             text-align: center;
             font-size: 3em;
             color: #152822;
+            margin-top: 60px;
         
             }
         
@@ -508,6 +570,7 @@ div.sesionGoogle img{
 }
 
 .boton-subir button {
+    width: 100%;
     background-color: #007bff;
     color: white;
     border: none;
@@ -560,16 +623,114 @@ div.sesionGoogle img{
     font-weight: bold;
 }
 
+
+
+.descripcionProducto {
+    flex: 1;
+}
+
+.fotoProducto {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px; /* Muevo la imagen a la derecha */
+}
+
+.descripcionProducto p {
+    margin-bottom: 20px;
+}
+
+.alergenos {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
 .platos{
     display: flex;
     flex-wrap: wrap;
 }
 
 .platos li{
+    
+    border-collapse: collapse;
     border: 2px solid black;
     padding: 200px;
 }
 
-/*Pititi es del atleti oleeee*/
-/*cobri es del beti oleeee*/
-/*JM es del Real Betis Balompié oleeee*/
+
+/*Modal*/
+
+.modal {
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .modal-description {
+    margin-bottom: 10px;
+  }
+  
+  .modal-price {
+    font-weight: bold;
+  }
+
+ /* Estilos para los alérgenos en el modal */
+    .modal-alergenos {
+    margin-top: 20px;
+  }
+  
+  .modal-alergenos h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-alergenos ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .modal-alergenos li {
+    margin-bottom: 5px;
+  }
+  
+
