@@ -372,6 +372,13 @@ div.sesionGoogle img{
 }
 
 
+/*FORMULARIO DE ERRORES*/
+
+.errores{
+    display: none;
+    border: 1px red;
+    color: red;
+}
 .rayaO{
     margin-top: 30px;
     margin-bottom: 20px;
@@ -385,6 +392,7 @@ div.sesionGoogle img{
     color: #fff;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 /*CSS CARRUSEL*/
