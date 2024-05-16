@@ -632,3 +632,13 @@ div.sesionGoogle img{
     font-weight: bold;
 }
 
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mapa h2 {
+    color: black;
+}
+
