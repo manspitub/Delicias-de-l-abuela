@@ -367,6 +367,15 @@ div.sesionGoogle img{
     
 }
 
+
+/*FORMULARIO DE ERRORES*/
+
+.errores{
+    display: none;
+    border: 1px red;
+    color: red;
+}
+
 /*CSS CARRUSEL*/
 .carrusel {
     position: relative;
