@@ -563,6 +563,16 @@ div.sesionGoogle img{
     font-size: 20px;
 }
 
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mapa h2 {
+    color: black;
+}
+
 /*Productos*/
 
 .tipoPlatos{
@@ -632,13 +642,5 @@ div.sesionGoogle img{
     font-weight: bold;
 }
 
-.mapa {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-.mapa h2 {
-    color: black;
-}
 
