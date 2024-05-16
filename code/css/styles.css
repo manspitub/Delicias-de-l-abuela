@@ -596,13 +596,13 @@ div.sesionGoogle img{
 }
 
 .tipoPlatos li{
+    padding: 10px;
     color: black;
     font-weight: bold;
     list-style-type: none;
     font-size: 1.3em;
     border: 2px solid black;
     border-radius:20px;
-    padding: 15px;
     cursor: pointer;
 }
 
@@ -656,9 +656,8 @@ div.sesionGoogle img{
 
 .platos li{
     
-    border-collapse: collapse;
-    border: 2px solid black;
-    padding: 200px;
+    list-style-type: none;
+    
 }
 
 

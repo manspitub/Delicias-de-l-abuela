@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delicias de l´abuela</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       crossorigin="anonymous"
     />
-    
   </head>
 
   <body>
@@ -19,7 +18,7 @@
     <header>
       <div>
         <span>
-          <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
+          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
           <!-- CAMBIAR FORMATO A PNG BUENO -->
         </span>
       </div>
@@ -30,71 +29,51 @@
       </div>
       <div class="userCarrito">
         <a href="inicio-sesion.html">
-          <span><img class="user" src="img/LOGO_USUARIO.png" alt="user" /> </span>
+          <span
+            ><img class="user" src="../img/LOGO_USUARIO.png" alt="user" />
+          </span>
         </a>
 
         <span style="width: 300px"></span>
         <span id="iconoCarrito">
-          <img class="carrito" src="img/CARRITO_BUENO.png" alt="carrito" />
+          <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
           <div id="cantidadCarrito">0</div>
         </span>
       </div>
     </header>
+
     <div class="mainContent">
-      <div class="tipoPlatos">
-        <ul>
-          <li id="todos">
-            Todos
-          </li>
-          <li id="masVendidos">
-            Más vendidos
-          </li>
-          <li id="veganos">
-            Veganos
-          </li>
-          <li id="postres">
-            Postres
-          </li>
-        </ul>
+      <div class="presentacion">
+        <div>
+          <h1>Sobre nosotros.</h1>
+          <ul>
+            <li>Empresa lider en ventas de comida a domicilio.</li>
+            <li>Alimentos testados por organizaciones mundiales.</li>
+            <li>Utilizamos nutrientes de origen nacional</li>
+            <li>Nacimos en Sevilla en el año 2024.</li>
+          </ul>
+        </div>
+        <div class="imgAbout">
+          <img src="../img/edificio-es-sede-empresa_662214-169715.avif" alt="" srcset="">
+        </div>
       </div>
-    
-
     </div>
-
-    
-
-    <div id="masVendidos">
-      <div class="categoriaPlatos">
-        <div class="linea"></div>
-        <h2>Platos Más Vendidos</h2>
-        <div class="linea"></div>
-      </div>
-
-      <ul class="platos">
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-      </ul>
-
+    <div class="boton-subir">
+      <button onclick="subirArriba()" title="Subir arriba">
+          <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
+      </button>
+      <script src="js/botonSubir.js"></script>
     </div>
-
-
-    
-
     <footer>
       <div class="contenedorLogos">
         <div class="abuela">
-          <img class="logoAbuela" src="img/LOGO_BUENO.png" alt="logo" />
+          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
         </div>
         <div class="logos">
           <!--Cambiar el href para poner urls-->
-          <img class="logoRRSS" src="img/instagram.png" alt="insta" />
-          <img class="logoRRSS" src="img/facebook.png" alt="facebook" />
-          <img class="logoRRSS" src="img/twitter.png" alt="equis" />
+          <img class="logoRRSS" src="../img/instagram.png" alt="insta" />
+          <img class="logoRRSS" src="../img/facebook.png" alt="facebook" />
+          <img class="logoRRSS" src="../img/twitter.png" alt="equis" />
         </div>
       </div>
 
@@ -123,8 +102,6 @@
           <li>Nuestros envíos</li>
           <li>Eat local, eat fresh, eat green</li>
           <li>Cómo trabajamos</li>
-          <li><a href="url_del_feed_rss"><img src="rss-icon.png" alt="RSS Feed"></a>
-          </li>
         </div>
       </div>
     </footer>
@@ -132,7 +109,6 @@
       © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
       <!--JS poner fecha de hoy-->
     </div>
-
     <aside id="asideCarrito" class="aside-carrito">
       <div id="cerrarAside" class="cerrar-aside">X</div>
 
@@ -146,6 +122,6 @@
     </aside>
     <div id="overlay" class="overlay"></div>
 
-    <script src="js/carrito.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>
