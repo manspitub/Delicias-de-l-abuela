@@ -3,6 +3,7 @@ var cantidadCarrito = document.getElementById("cantidadCarrito");
 // Obtiene el valor de la cantidad
 var cantidad = parseInt(cantidadCarrito.textContent);
 
+
 // Si la cantidad es 0 o menos, oculta el elemento de cantidad
 if (cantidad <= 0) {
     cantidadCarrito.style.display = "none";
@@ -15,6 +16,7 @@ var asideCarrito = document.getElementById("asideCarrito");
 var body = document.querySelector("body");
 var overlay = document.getElementById("overlay");
 var mensajeNoProductos = document.getElementById("mensajeNoProductos");
+var mensajeProductos = document.getElementById("mensajeProductos");
 
 console.log(mensajeNoProductos)
 
@@ -51,6 +53,8 @@ if (parseInt(cantidadCarrito.textContent) <= 0) {
     mensajeNoProductos.style.display = "flex"; // Muestra el mensaje
 } else {
     mensajeNoProductos.style.display = "none"; // Oculta el mensaje
+    mensajeProductos.style.display = "flex";
+    cantidadCarrito.style.display = "block";
 }
 
 // Verifica si hay productos cuando se actualiza el número de productos
@@ -59,5 +63,7 @@ cantidadCarrito.addEventListener("DOMSubtreeModified", function() {
         mensajeNoProductos.style.display = "flex"; // Muestra el mensaje
     } else {
         mensajeNoProductos.style.display = "none"; // Oculta el mensaje
+        mensajeProductos.style.display = "flex";
+        cantidadCarrito.style.display = "block";
     }
 });
