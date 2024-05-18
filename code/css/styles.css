@@ -439,8 +439,8 @@ div.errores{
 }
 
 .imagenContainer {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 80%;
     object-fit: cover;
     margin-right: 10px;
     /* Espacio entre las imágenes */
@@ -449,7 +449,7 @@ div.errores{
     position: relative;
     overflow: hidden;
     /* Asegura que el borde no se extienda fuera de la imagen */
-    border: 2px solid transparent;
+    border: 0px solid transparent;
     /* Borde transparente inicial */
     transition: border-color 0.3s ease;
     /* Transición para el cambio de color del borde */
@@ -462,8 +462,8 @@ div.errores{
 }
 
 .ImagenesCarrusel {
-    width: 640px;
-    height: 600px;
+    width: 500px;
+    height: 400px;
     /* Ajusta la altura según sea necesario */
     object-fit: cover;
 }
