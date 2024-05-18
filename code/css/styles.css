@@ -95,16 +95,22 @@ a:hover {
     display: inline-block;
 }
 
+#iconoCarrito {
+    position: relative;
+}
+
+
 .cantidadCarrito {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 0;
+    right: 0;
     background-color: rgb(147, 18, 134);
-    color: white;
+    color: white; 
     border-radius: 50%;
     padding: 5px 8px;
     font-size: 12px;
 }
+
 
 .aside-carrito {
     position: fixed;
@@ -490,6 +496,7 @@ div.errores{
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    overflow-x: hidden;
 }
 
 .imagenContainer:hover .descripcion {
@@ -759,6 +766,7 @@ div.errores{
 /*Modal*/
 
 .modal {
+    text-align: center;
     color: black;
     display: none;
     position: fixed;
@@ -817,18 +825,111 @@ div.errores{
 .modal-alergenos h2 {
     margin-bottom: 10px;
 }
-
-.modal-alergenos ul {
-    list-style-type: none;
-    padding-left: 0;
+  
+  .modal-alergenos ul {
+    display: flex;
+    justify-content: space-between;
 }
-
+∫
 .modal-alergenos li {
     margin-bottom: 5px;
 }
 
+  button:hover{
+    opacity: 200;
+  }
+
+ /* Estilo general para el aside */
+ #mensajeProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* Estilo para el título del carrito */
+#mensajeProductos h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para la lista de elementos del carrito */
+.elementos-carrito {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+/* Estilo para cada elemento de la lista del carrito */
+.carrito-item {
+    padding: 10px;
+    background-color: #f2f0ec;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.carrito-img {
+    width: 100px; 
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.carrito-texto {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.producto-cantidad {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilo para el precio total */
+.texto_derecha {
+    text-align: right;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Estilo para el botón de vaciar carrito */
+#boton-vaciar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+#boton-vaciar img{
+    width: 15%;
+}
 
 
+#boton-vaciar:hover {
+    background-color: #c0392b;
+
+}
 
 /*RSS*/
 
@@ -915,4 +1016,5 @@ div.errores{
     font-size: 14px;
     line-height: 1.6;
     color: #797979;
+
 }

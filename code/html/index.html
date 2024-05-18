@@ -12,13 +12,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       crossorigin="anonymous"
     />
-
   </head>
 
   <body>
     <!--Etiqueta para header-->
     <header>
-
+      <div>
+        <span>
+          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
       <div>
           <span>
               <a href="index.html">
@@ -34,19 +35,19 @@
       </div>
   
       <div class="userCarrito">
-          <a href="inicio-sesion.html">
-              <span
-                  ><img class="user" src="../img/LOGO_USUARIO.png" alt="user" />
-              </span>
-          </a>
-  
-          <span style="width: 300px"></span>
-  
-          <span id="iconoCarrito">
-              <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
-              <div id="cantidadCarrito">0</div>
+        <a href="inicio-sesion.html">
+          <span
+            ><img class="user" src="../img/LOGO_USUARIO.png" alt="user" />
           </span>
-  
+        </a>
+
+        <span style="width: 300px"></span>
+        <span id="iconoCarrito">
+          <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
+
+          <div id="cantidadCarrito">0</div>
+        </span>
+
       </div>
       
   </header>
@@ -64,9 +65,7 @@
           <button><a href="../html/productos.html">! Realiza aquí tu pedido ¡</a></button>
         </div>
         <div class="imgPrincipal">
-
           <img src="../img/imagenPrincipal.png" alt="" srcset="" />
-
         </div>
       </div>
     </div>
@@ -75,7 +74,6 @@
       <button id="btnAnterior" class="botonesCarrusel">&lt;</button>
       <div class="carruselImagenes">
         <div class="imagenContainer">
-
           <div class="precio">10,20€</div>
           <img
             class="ImagenesCarrusel"
@@ -92,11 +90,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">7,50€</div>
@@ -114,11 +112,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">12,00€</div>
@@ -137,11 +135,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">8,80€</div>
@@ -159,11 +157,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">9,50€</div>
@@ -181,11 +179,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">11,30€</div>
@@ -204,11 +202,11 @@
           <div class="alergenos">
             <h2>Alergenos</h2>
             <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="imagenContainer">
           <div class="precio">13,50€</div>
@@ -256,6 +254,10 @@
           <div id="modalDescription" class="modal-description"></div>
           <div id="modalPrice" class="modal-price"></div>
           <div id="modalAlergenos" class="modal-alergenos"></div>
+          <button id="addToCarrito">
+            <i class="fas fa-shopping-cart"></i>
+            Añadir al carrito
+          </button>
         </div>
       </div>
       <script src="../js/detailPlato.js"></script>
@@ -286,7 +288,6 @@
         </div>
       </div>
       <div class="div2">
-
         <div
           class="imagenFondo"
           style="
@@ -306,7 +307,6 @@
         </div>
       </div>
       <div class="div3">
-
         <div
           class="imagenFondo"
           style="
@@ -331,21 +331,22 @@
     <footer>
       <div class="contenedorLogos">
         <div class="abuela">
+
           <a href="index.html">
             <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
           </a>       
         </div>
-       <div class="logos">
-<a href="https://www.instagram.com">
-<img class="logoRRSS" src="../img/instagram.png" alt="insta">
-</a>
-<a href="https://www.facebook.com">
-<img class="logoRRSS" src="../img/facebook.png" alt="facebook">
-</a>
-<a href="https://twitter.com">
-<img class="logoRRSS" src="../img/twitter.png" alt="equis">
-</a>
-</div>
+        <div class="logos">
+          <a href="https://www.instagram.com">
+            <img class="logoRRSS" src="../img/instagram.png" alt="insta" />
+          </a>
+          <a href="https://www.facebook.com">
+            <img class="logoRRSS" src="../img/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://twitter.com">
+            <img class="logoRRSS" src="../img/twitter.png" alt="equis" />
+          </a>
+        </div>
       </div>
 
       <div class="datosfoot">
@@ -375,16 +376,17 @@
           <li>Cómo trabajamos</li>
 
           <li>
+
             <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed"/></a>
           </li>
         </div>
       </div>
     </footer>
 
-
     <div class="boton-subir">
       <button onclick="subirArriba()" title="Subir arriba">
-          <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
+        <i class="fas fa-arrow-up"></i>
+        <!-- Icono de flecha hacia arriba -->
       </button>
     </div>
     <script src="../js/botonSubir.js"></script>
@@ -404,10 +406,18 @@
           <button>Seguir comprando</button>
         </div>
       </div>
+      <aside id="mensajeProductos">
+        <h2>Carrito</h2>
+        <!-- Elementos del carrito -->
+        <ul id="carritoLista" class="elementos-carrito"></ul>
+        <hr />
+        <!-- Precio total -->
+        <p class="texto_derecha">Total: <span id="total">0.00</span>&euro;</p>
+        <button id="boton-vaciar">Vaciar<img src="../img/papelera.png" alt="" srcset=""></button>
+      </aside>
     </aside>
     <div id="overlay" class="overlay"></div>
 
     <script src="../js/carrito.js"></script>
   </body>
 </html>
-
