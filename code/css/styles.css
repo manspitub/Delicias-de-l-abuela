@@ -100,7 +100,7 @@ a:hover {
 }
 
 
-.cantidadCarrito {
+#cantidadCarrito {
     position: absolute;
     top: 0;
     right: 0;
@@ -496,7 +496,7 @@ div.errores{
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .imagenContainer:hover .descripcion {
@@ -745,11 +745,12 @@ div.errores{
 
 /* Para centrar horizontalmente los contenedores de platos */
 #masVendidos, #postres, #veggies {
+    max-width: 90%;
     margin: auto;
-    max-width: 1200px; /* Ancho máximo del contenedor */
   }
   
   .platos {
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distribuye uniformemente los elementos */
