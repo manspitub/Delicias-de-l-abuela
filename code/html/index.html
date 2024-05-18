@@ -16,20 +16,24 @@
 
   <body>
     <!--Etiqueta para header-->
-    <main></main>
     <header>
       <div>
         <span>
           <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
-
-          <!-- CAMBIAR FORMATO A PNG BUENO -->
-        </span>
+      <div>
+          <span>
+              <a href="index.html">
+                  <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+              </a>
+          </span>
       </div>
+  
       <div class="main">
-        <a href="index.html"><span>Home</span></a>
-        <a href="productos.html"><span>Productos</span></a>
-        <a href="about.html"><span>About</span></a>
+          <a href="index.html"><span>Home</span></a>
+          <a href="productos.html"><span>Productos</span></a>
+          <a href="about.html"><span>About</span></a>
       </div>
+  
       <div class="userCarrito">
         <a href="inicio-sesion.html">
           <span
@@ -43,8 +47,11 @@
 
           <div id="cantidadCarrito">0</div>
         </span>
+
       </div>
-    </header>
+      
+  </header>
+
     <div class="mainContent">
       <div class="presentacion">
         <div>
@@ -55,7 +62,7 @@
             <li>Relájate, l'abuela te cocina.</li>
             <li>Envíos a domicilio.</li>
           </ul>
-          <button>¡Haz ya tu pedido!</button>
+          <button><a href="../html/productos.html">! Realiza aquí tu pedido ¡</a></button>
         </div>
         <div class="imgPrincipal">
           <img src="../img/imagenPrincipal.png" alt="" srcset="" />
@@ -201,6 +208,43 @@
             </ul>
           </div>
         </div>
+        <div class="imagenContainer">
+          <div class="precio">13,50€</div>
+          <img
+            class="ImagenesCarrusel"
+            src="../img/img.platos/Pinchito.jpg"
+            alt=""
+          />
+          <div class="descripcion">
+           Pinchito de carne 
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+            </ul>
+        </div>
+        </div><div class="imagenContainer">
+          <div class="precio">7€</div>
+          <img
+            class="ImagenesCarrusel"
+            src="../img/img.platos/tea-1565932_1280.jpg"
+            alt=""
+          />
+          <div class="descripcion">
+           Tarta de zanahoria con almendras 
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+            </ul>
+        </div>
+        </div>
       </div>
       <!-- Modal -->
       <div id="myModal" class="modal">
@@ -287,7 +331,10 @@
     <footer>
       <div class="contenedorLogos">
         <div class="abuela">
-          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+
+          <a href="index.html">
+            <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+          </a>       
         </div>
         <div class="logos">
           <a href="https://www.instagram.com">
@@ -315,10 +362,10 @@
           <div>
             <li>Sobre Nosotros</li>
             <!--Añadir hipervínculo-->
-            <li>Política de cookies</li>
-            <li>Publicidad</li>
-            <li>Afiliados</li>
-            <li>Preguntas Frecuentes</li>
+            <li><a href="../img/trolleito.jpg">Política de cookies</a></li>
+            <li><a href="https://ads.google.com/intl/es_es/home/">Publicidad</a></li>
+            <li><a href="https://knoweats.com/?utm_medium=cpc&utm_source=google&utm_campaign=1.Branding&utm_term=&utm_content=knoweats&gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qbK2WHVsWx1rCQ81LCHyvQJ47_mj9qGkm5IO1luJa7MVyegmnyUzgaArMeEALw_wcB">Afiliados</a></li>
+            <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
           </div>
         </div>
 
@@ -329,9 +376,8 @@
           <li>Cómo trabajamos</li>
 
           <li>
-            <a href="../url_del_feed_rss"
-              ><img src="rss-icon.png" alt="RSS Feed"
-            /></a>
+
+            <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed"/></a>
           </li>
         </div>
       </div>
