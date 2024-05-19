@@ -840,12 +840,16 @@ div.errores{
     opacity: 200;
   }
 
+ 
+
  /* Estilo general para el aside */
  #mensajeProductos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    box-sizing: border-box; 
+    height: 100%;
+    overflow: auto;
 }
 
 /* Estilo para el título del carrito */
@@ -860,11 +864,12 @@ div.errores{
     padding: 0;
     margin: 0;
     flex-grow: 1;
-    overflow-y: hidden;
+    
 }
 
 /* Estilo para cada elemento de la lista del carrito */
 .carrito-item {
+    margin-bottom: 10px;
     padding: 10px;
     background-color: #f2f0ec;
     border-radius: 2rem;
