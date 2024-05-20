@@ -136,4 +136,50 @@ document.addEventListener("DOMContentLoaded", function() {
             delete productosEnCarrito[key];
         });
     });
+
+
+    
+    const botonPedir = document.getElementById('boton-pedir');
+    const modalConfirmacionPedido = document.getElementById('modalConfirmacionPedido');
+    const closeConfirmacion = document.getElementById('closeConfirmacion');
+    const confirmarPedidoButton = document.getElementById('confirmarPedidoButton');
+    const modalProcesoPedido = document.getElementById('modalProcesoPedido');
+
+    // Mostrar el modal de confirmación de pedido al hacer clic en el botón "Pedir"
+    botonPedir.addEventListener('click', function() {
+        modalConfirmacionPedido.style.display = "block";
+    });
+
+    // Cerrar el modal de confirmación de pedido
+    closeConfirmacion.addEventListener('click', function() {
+        modalConfirmacionPedido.style.display = "none";
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modalConfirmacionPedido) {
+            modalConfirmacionPedido.style.display = "none";
+        }
+    });
+
+    // Confirmar el pedido y mostrar el proceso del pedido
+    confirmarPedidoButton.addEventListener('click', function() {
+        modalConfirmacionPedido.style.display = "none";
+        modalProcesoPedido.style.display = "block";
+
+        setTimeout(function() {
+            modalProcesoPedido.style.display = "none";
+            alert("Pedido completado con éxito.");
+
+            // Vaciar el carrito después de confirmar el pedido
+            carritoLista.innerHTML = '';
+            total = 0;
+            totalElement.textContent = total.toFixed(2);
+            cantidad = 0;
+            cantidadCarrito.textContent = cantidad;
+            Object.keys(productosEnCarrito).forEach(function(key) {
+                delete productosEnCarrito[key];
+            });
+
+        }, 3000); // Simulación de proceso de 3 segundos
+    });
 });
