@@ -334,7 +334,6 @@ button {
 /*FORMULARIO DE INICIO DE SESIÓN*/
 
 div.formulario {
-    opacity: 0.7;
     margin: 100px;
     height: 60%;
     width: 40%;
@@ -346,13 +345,10 @@ div.formulario {
     border: 2px solid black;
     border-radius: 20px;
     padding: 10px;
-    background-image: url('../img/Fondo-cocina.jpeg');
-    /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
-    background-size: cover;
+    background-color: #152822;
     /* Esto hace que la imagen de fondo cubra todo el formulario */
     background-position: center;
     /* Centra la imagen de fondo */
-    opacity: 0.8;
 }
 
 form {
@@ -431,7 +427,7 @@ div.errores{
 }
 
 .TituloInicioSesion {
-    background-color: rgb(70, 7, 95);
+    background-color: #b9622c;
     box-sizing: border-box;
     border-radius: 30px;
     margin-bottom: 10px;
