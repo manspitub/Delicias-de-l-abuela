@@ -852,9 +852,14 @@ div.errores{
     display: flex;
     justify-content: space-between;
 }
-∫
-.modal-alergenos li {
+
+.modal-alergenos ul > li {
+    list-style-type: none;
     margin-bottom: 5px;
+}
+
+.modal-alergenos ul > li > img{
+    width: 50px
 }
 
   button:hover{
@@ -934,7 +939,8 @@ div.errores{
 }
 
 /* Estilo para el botón de vaciar carrito */
-#boton-vaciar {
+#boton-vaciar,#boton-pedir {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -948,14 +954,33 @@ div.errores{
     align-self: center;
 }
 
-#boton-vaciar img{
+button > img{
     width: 15%;
 }
 
 
 #boton-vaciar:hover {
     background-color: #c0392b;
+}
 
+/* Botón Pedir */
+#boton-pedir {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+#boton-pedir:hover {
+    background-color: #45a049; /* Verde oscuro */
+}
+
+/* Botón Confirmar en el modal de confirmación */
+#confirmarPedidoButton {
+    background-color: #008CBA; /* Azul */
+    color: white;
+}
+
+#confirmarPedidoButton:hover {
+    background-color: #007B9A; /* Azul oscuro */
 }
 
 /*RSS*/
@@ -1141,6 +1166,45 @@ div.errores{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   
+
+  .modalPedido {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+}
+
+.modal-content-pedido {
+    color: black;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Ancho máximo para el contenido modal */
+    text-align: center;
+}
+
+/* Spinner */
+.spinner {
+    margin: 20px auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
   
 
   
