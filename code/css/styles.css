@@ -208,7 +208,7 @@ footer>.datosfoot>div {
     padding: 20px;
     border: 1px solid white;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: center;    
     text-align: center;
 }
 
@@ -218,8 +218,27 @@ footer>.datosfoot>div {
     padding-bottom: 10px;
 }
 
+.metodosPago {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
 
+.metodo {
+    display: inline-block;
+    margin: 0 10px;
+}
 
+.metodo img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.metodo img:hover {
+    transform: scale(1.1);
+}
 
 .cookies {
     font-weight: bold;
@@ -462,8 +481,8 @@ div.errores{
 }
 
 .ImagenesCarrusel {
-    width: 500px;
-    height: 400px;
+    width: 700px;
+    height: 550px;
     /* Ajusta la altura según sea necesario */
     object-fit: cover;
 }
@@ -685,6 +704,7 @@ div.errores{
 
 .tipoPlatos ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -716,8 +736,6 @@ div.errores{
     font-weight: bold;
 }
 
-
-
 .descripcionProducto {
     flex: 1;
 }
@@ -744,7 +762,7 @@ div.errores{
 }
 
 /* Para centrar horizontalmente los contenedores de platos */
-#masVendidos, #postres, #veggies {
+#masVendidos, #postres, #veganos {
     max-width: 90%;
     margin: auto;
   }
@@ -753,7 +771,6 @@ div.errores{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye uniformemente los elementos */
   }
   
   .platos li {
@@ -762,6 +779,14 @@ div.errores{
     box-sizing: border-box; /* Ajustar el tamaño del borde y el relleno al ancho especificado */
   }
 
+  .ImagenesProductos{
+    width: 500px;
+    height: 380px;
+  }
+
+  .botonesProductos:hover{
+    background-color: black;
+  }
   
 
 /*Modal*/
