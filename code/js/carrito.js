@@ -17,7 +17,6 @@ var body = document.querySelector("body");
 var overlay = document.getElementById("overlay");
 var mensajeNoProductos = document.getElementById("mensajeNoProductos");
 var mensajeProductos = document.getElementById("mensajeProductos");
-
 console.log(mensajeNoProductos)
 
 // Agrega un evento de clic al ícono del carrito
@@ -50,6 +49,9 @@ cerrarAside.addEventListener("click", function() {
 
 // Verifica si hay productos al cargar la página
 if (parseInt(cantidadCarrito.textContent) <= 0) {
+    cantidadCarrito.style.display = "none";
+
+    mensajeProductos.style.display = "none";
     mensajeNoProductos.style.display = "flex"; // Muestra el mensaje
 } else {
     mensajeNoProductos.style.display = "none"; // Oculta el mensaje
@@ -60,6 +62,8 @@ if (parseInt(cantidadCarrito.textContent) <= 0) {
 // Verifica si hay productos cuando se actualiza el número de productos
 cantidadCarrito.addEventListener("DOMSubtreeModified", function() {
     if (parseInt(cantidadCarrito.textContent) <= 0) {
+        cantidadCarrito.style.display = "none";
+        mensajeProductos.style.display = "none";
         mensajeNoProductos.style.display = "flex"; // Muestra el mensaje
     } else {
         mensajeNoProductos.style.display = "none"; // Oculta el mensaje

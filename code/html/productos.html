@@ -1,340 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delicias de l´abuela</title>
 
-    <link rel="stylesheet" href="../css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias de l´abuela</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-    />
-    
-  </head>
+  <link rel="stylesheet" href="../css/styles.css" />
 
-  <body>
-    <!--Etiqueta para header-->
-    <main></main>
-    <header>
-      <div>
-        <span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" />
 
-          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+</head>
 
-          <!-- CAMBIAR FORMATO A PNG BUENO -->
-        </span>
-      </div>
-      <div class="main">
-        <a href="index.html"><span>Home</span></a>
-        <a href="productos.html"><span>Productos</span></a>
-        <a href="about.html"><span>About</span></a>
-      </div>
-      <div class="userCarrito">
-        <a href="inicio-sesion.html">
+<body>
+  <!--Etiqueta para header-->
+  <main></main>
+  <header>
+    <div>
+      <span>
 
-          <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user" /> </span>
+        <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
 
-        </a>
-
-        <span style="width: 300px"></span>
-        <span id="iconoCarrito">
-
-          <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
-
-          <div id="cantidadCarrito">0</div>
-        </span>
-      </div>
-    </header>
-    <div class="mainContent">
-      <div class="tipoPlatos">
-        <ul>
-          <li id="todos">
-            Todos
-          </li>
-          <li id="masVendidos">
-            Más vendidos
-          </li>
-          <li id="veganos">
-            Veganos
-          </li>
-          <li id="postres">
-            Postres
-          </li>
-        </ul>
-      </div>
-    
-
+        <!-- CAMBIAR FORMATO A PNG BUENO -->
+      </span>
     </div>
+    <div class="main">
+      <a href="index.html"><span>Home</span></a>
+      <a href="productos.html"><span>Productos</span></a>
+      <a href="about.html"><span>About</span></a>
+    </div>
+    <div class="userCarrito">
+      <a href="inicio-sesion.html">
 
-    
+        <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user" /> </span>
 
-    <div id="masVendidos">
-      <div class="categoriaPlatos">
-        <div class="linea"></div>
-        <h2>Platos Más Vendidos</h2>
-        <div class="linea"></div>
-      </div>
+      </a>
 
-      <ul class="platos">
+      <span style="width: 300px"></span>
+      <span id="iconoCarrito">
 
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
-        <li><div class="imagenContainer">
-          <div class="precio">11,30€</div>
-          <img
-            class="ImagenesCarrusel"
-            src="../img/img.platos/Estofado.jpg"
-            alt=""
-          />
-          <div class="descripcion">
-            Estofado de ternera con patatas y zanahorias: Un manjar
-            reconfortante que te envuelve en un abrazo cálido con cada
-            cucharada. La ternera tierna se mezcla con patatas y zanahorias
-            tiernas en un caldo abundante y sabroso que te hará sentir como en
-            casa.
-          </div>
-          <div class="alergenos">
-            <h2>Alergenos</h2>
-            <ul>
-                <li>Trigo</li>
-                <li>Huevos</li>
-                <li>Leche</li>
-            </ul>
-        </div>
-        </div></li>
+        <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
 
+        <div id="cantidadCarrito">0</div>
+      </span>
+    </div>
+  </header>
+  <div class="mainContent">
+    <div class="tipoPlatos">
+      <ul>
+        <li><a href="productos.html">Todos</a></li>
+        <li><a href="#masVendidos">Mas vendidos</a></li>
+        <li><a href="#veganos">Veganos</a></li>
+        <li><a href="#postres">Postres</a></li>
       </ul>
-
     </div>
 
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modalImage" class="modal-image" src="" alt="" />
-        <div id="modalDescription" class="modal-description"></div>
-        <div id="modalPrice" class="modal-price"></div>
-        <div id="modalAlergenos" class="modal-alergenos"></div>
-      </div>
+  </div>
+
+
+
+  <div id="masVendidos">
+    <div class="categoriaPlatos">
+      <div class="linea"></div>
+      <h2>Platos Más Vendidos</h2>
+      <div class="linea"></div>
     </div>
-    <script src="../js/detailPlato.js"></script>
 
-    
+    <ul class="platos">
 
-    <footer>
-      <div class="contenedorLogos">
-        <div class="abuela">
-
-          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
-        </div>
-        <div class="logos">
-<a href="https://www.instagram.com">
-<img class="logoRRSS" src="../img/instagram.png" alt="insta">
-</a>
-<a href="https://www.facebook.com">
-<img class="logoRRSS" src="../img/facebook.png" alt="facebook">
-</a>
-<a href="https://twitter.com">
-<img class="logoRRSS" src="../img/twitter.png" alt="equis">
-</a>
-</div>
-      </div>
-
-      <div class="datosfoot">
-        <div>
-          <h3>Contacto</h3>
-          <li>Telefonos de contacto:</li>
-          <li>+34 679 640 570</li>
-          <li>E-mail:</li>
-          <li>deliciasDelAbuela@delicias.es</li>
-        </div>
-        <div>
-          <h3>Información</h3>
-          <div>
-            <li>Sobre Nosotros</li>
-            <!--Añadir hipervínculo-->
-            <li>Política de cookies</li>
-            <li>Publicidad</li>
-            <li>Afiliados</li>
-            <li>Preguntas Frecuentes</li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
           </div>
         </div>
-
-        <div>
-          <h3>Empresa</h3>
-          <li>Nuestros envíos</li>
-          <li>Eat local, eat fresh, eat green</li>
-          <li>Cómo trabajamos</li>
-          <li><a href="url_del_feed_rss"><img src="rss-icon.png" alt="RSS Feed"></a>
-          </li>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">7,50€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/guiso-de-ternera-arroz-y-verduras_B.jpg" alt="" />
+          <div class="descripcion">
+            Comenzamos sofriendo lentamente cebolla, ajo, pulpa de pimiento choricero y zanahoria e incorporamos
+            champiñones y tomate concentrado. Mojamos con vino tinto y especiamos con comino y tomillo para incorporar
+            nuestro caldo casero de ternera. Finalmente, cocinamos la carne de ternera a baja temperatura asegurándonos
+            que quede melosa para rematar este guiso completando con patatas cocidas al vapor.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
-    <div class="cookies">
-      © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
-      <!--JS poner fecha de hoy-->
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/sopa-criolla-limena_B.jpg" alt="" />
+          <div class="descripcion">
+            Para este clásico plato peruano, comenzamos sofriendo lentamente cebolla morada junto con ajo y jengibre.
+            Incorporamos pasta de ají panka que le aporta la alegría tan característica a este plato. Cocinamos con
+            nuestro caldo de cerdo. Para rematar incorporamos cilantro fresco. Como guarnición acompañamos con pasta de
+            trigo y carne de cerdo desmigada.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel"
+            src="../img/img.platos/salmon-con-salsa-provenzal-patatas-y-verduras-variadas_B.jpg" alt="" />
+          <div class="descripcion">
+            Para este clásico plato peruano, comenzamos sofriendo lentamente cebolla morada junto con ajo y jengibre.
+            Incorporamos pasta de ají panka que le aporta la alegría tan característica a este plato. Cocinamos con
+            nuestro caldo de cerdo. Para rematar incorporamos cilantro fresco. Como guarnición acompañamos con pasta de
+            trigo y carne de cerdo desmigada.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/pavo-con-salsa-tunecina-cous-cous-y-verduritas_B.jpg"
+            alt="" />
+          <div class="descripcion">
+            Cocinamos a baja temperatura la pechuga de pavo asegurándonos que quede cocida y perfectamente jugosa. Para
+            la salsa comenzamos sofriendo cebolla morada junto con ajo y jengibre. Incorporamos ciruelas pasas que
+            aportan ese punto de dulzor y especiamos con comino y cayena, el zumo de limón realza el conjunto con su
+            acidez. Para rematar el plato acompañamos con cous cous y verduras.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel"
+            src="../img/img.platos/contramuslo-con-salsa-de-yogurt-y-menta-cous-cous-y-verduras_B.jpg" alt="" />
+          <div class="descripcion">
+            Cocinamos el contramuslo a alta temperatura asegurándonos de que quede un bonito color dorado y a la vez
+            jugoso. Para la salsa sofreímos ajo junto con cebolla, e incorporamos un poco de jengibre y pimentón.
+            Mojamos con nuestro caldo de pollo tostado y cocinamos lentamente. A último momento incorporamos el yogur y
+            la menta fresca. Como acompañamiento, cous cous y un mix de verduras.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/merluza-en-salsa-verde_B.jpg" alt="" />
+          <div class="descripcion">
+            Un lomo de merluza, limpio de espinas y listo para comer, cocinado a baja temperatura, acompañado de patatas
+            y una salsa verde de su fumet. Terminamos con perejil fresco y un chorrito de aceite de oliva.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel"
+            src="../img/img.platos/albondigas-con-salsa-toscana-patatas-cebollitas-y-brocoli_B.jpg" alt="" />
+          <div class="descripcion">
+            Empezamos marcando las albóndigas a fuego fuerte. Para la salsa comenzamos sofriendo zanahorias y cebolla
+            morada. Incorporamos un poco de pasta de tomate y ajo confitado, mojamos con vino y añadimos nuestro caldo
+            de ternera casero. Cocinamos todo a fuego suave. Para rematar y redondear los sabores incorporamos un poco
+            de nata e introducimos las albóndigas en la salsa para guisarlas con el conjunto. Para completar el plato,
+            patatas asadas, brócoli y unas cebollitas francesas.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/pollo-con-salsa-yakarta-arroz-y-verduras_B.jpg" alt="" />
+          <div class="descripcion">
+            Cocinamos el pollo a alta temperatura en el horno asegurándonos que quede cocido y a la vez jugoso. Para la
+            salsa sofreímos chipotles junto con zumo de lima y curcuma. Para rematar el arroz y el mix de verduras crean
+            un equilibrio perfecto.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- Veganos -->
+
+
+  <div id="veganos">
+    <div class="categoriaPlatos">
+      <div class="linea"></div>
+      <h2>Veganos</h2>
+      <div class="linea"></div>
     </div>
 
-    <aside id="asideCarrito" class="aside-carrito">
-      <div id="cerrarAside" class="cerrar-aside">X</div>
+    <ul class="platos">
 
-      <!-- Contenido del aside aquí -->
-      <div id="mensajeNoProductos">
-        <div>No hay productos seleccionados.</div>
-        <div>
-          <button>Seguir comprando</button>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </aside>
-    <div id="overlay" class="overlay"></div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">7,50€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Albondigasensalsaconpatatadado.webp" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/ensalada.jpeg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/lasaña.png" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
 
-    <div class="boton-subir">
-      <button onclick="subirArriba()" title="Subir arriba">
-          <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
+    </ul>
+
+  </div>
+
+
+  <!-- Postres -->
+  <div id="postres">
+    <div class="categoriaPlatos">
+      <div class="linea"></div>
+      <h2>Postres</h2>
+      <div class="linea"></div>
+    </div>
+
+    <ul class="platos">
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">7,50€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Albondigasensalsaconpatatadado.webp" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/ensalada.jpeg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/lasaña.png" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="imagenContainer">
+          <div class="precio">11,30€</div>
+          <img class="ImagenesCarrusel" src="../img/img.platos/Estofado.jpg" alt="" />
+          <div class="descripcion">
+            Estofado de ternera con patatas y zanahorias: Un manjar
+            reconfortante que te envuelve en un abrazo cálido con cada
+            cucharada. La ternera tierna se mezcla con patatas y zanahorias
+            tiernas en un caldo abundante y sabroso que te hará sentir como en
+            casa.
+          </div>
+          <div class="alergenos">
+            <h2>Alergenos</h2>
+            <ul>
+              <li>Trigo</li>
+              <li>Huevos</li>
+              <li>Leche</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" class="modal-image" src="" alt="" />
+      <div id="modalDescription" class="modal-description"></div>
+      <div id="modalPrice" class="modal-price"></div>
+      <div id="modalAlergenos" class="modal-alergenos"></div>
+      <button id="addToCarrito">
+        <i class="fas fa-shopping-cart"></i>
+        Añadir al carrito
       </button>
     </div>
-    <script src="../js/botonSubir.js"></script>
-    <script src="../js/carrito.js"></script>
+  </div>
+  <script src="../js/detailPlato.js"></script>
 
-  </body>
+
+
+  <footer>
+    <div class="contenedorLogos">
+      <div class="abuela">
+
+        <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+      </div>
+      <div class="logos">
+        <a href="https://www.instagram.com">
+          <img class="logoRRSS" src="../img/instagram.png" alt="insta">
+        </a>
+        <a href="https://www.facebook.com">
+          <img class="logoRRSS" src="../img/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com">
+          <img class="logoRRSS" src="../img/twitter.png" alt="equis">
+        </a>
+      </div>
+    </div>
+
+    <div class="datosfoot">
+      <div>
+        <h3>Contacto</h3>
+        <li>Telefonos de contacto:</li>
+        <li>+34 679 640 570</li>
+        <li>E-mail:</li>
+        <li>deliciasDelAbuela@delicias.es</li>
+      </div>
+      <div>
+        <h3>Información</h3>
+        <div>
+          <li>Sobre Nosotros</li>
+          <!--Añadir hipervínculo-->
+          <li>Política de cookies</li>
+          <li>Publicidad</li>
+          <li>Afiliados</li>
+          <li>Preguntas Frecuentes</li>
+        </div>
+      </div>
+
+      <div>
+        <h3>Empresa</h3>
+        <li>Nuestros envíos</li>
+        <li>Eat local, eat fresh, eat green</li>
+        <li>Cómo trabajamos</li>
+        <li><a href="url_del_feed_rss"><img src="rss-icon.png" alt="RSS Feed"></a>
+        </li>
+      </div>
+    </div>
+  </footer>
+  <div class="cookies">
+    © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
+    <!--JS poner fecha de hoy-->
+  </div>
+
+  <aside id="asideCarrito" class="aside-carrito">
+    <div id="cerrarAside" class="cerrar-aside">X</div>
+
+    <!-- Contenido del aside aquí -->
+    <div id="mensajeNoProductos">
+      <div>No hay productos seleccionados.</div>
+      <div>
+        <button>Seguir comprando</button>
+      </div>
+    </div>
+    <aside id="mensajeProductos">
+      <h2>Carrito</h2>
+      <!-- Elementos del carrito -->
+      <ul id="carritoLista" class="elementos-carrito"></ul>
+      <hr />
+      <!-- Precio total -->
+      <p class="texto_derecha">Total: <span id="total">0.00</span>&euro;</p>
+      <button id="boton-vaciar">Vaciar<img src="../img/papelera.png" alt="" srcset=""></button>
+    </aside>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="boton-subir">
+    <button onclick="subirArriba()" title="Subir arriba">
+      <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
+    </button>
+  </div>
+  <script src="../js/botonSubir.js"></script>
+  <script src="../js/carrito.js"></script>
+
+</body>
+
 </html>

@@ -18,52 +18,54 @@
     <main>
     </main>
     <header>
+
         <div>
-          <span>
-
-            <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
-
-            <!-- CAMBIAR FORMATO A PNG BUENO -->
-          </span>
+            <span>
+                <a href="index.html">
+                    <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+                </a>
+            </span>
         </div>
-        <div class="main">
-          <a href="index.html"><span>Home</span></a>
-
-          <a href="productos.html"><span>Productos</span></a>
-
-          <a href="about.html"><span>About</span></a>
-        </div>
-        <div class="userCarrito">
-          <a href="inicio-sesion.html">
-
-            <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user" /> </span>
-
-          </a>
   
-          <span style="width: 300px"></span>
-          <span id="iconoCarrito">
-
-            <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
-
-            <div id="cantidadCarrito">0</div>
-          </span>
+        <div class="main">
+            <a href="index.html"><span>Home</span></a>
+            <a href="productos.html"><span>Productos</span></a>
+            <a href="about.html"><span>About</span></a>
         </div>
-      </header>
+  
+        <div class="userCarrito">
+            <a href="inicio-sesion.html">
+                <span>
+                  <img class="user" src="../img/LOGO_USUARIO.png" alt="user" />
+                </span>
+            </a>
+  
+            <span style="width: 300px"></span>
+    
+            <span id="iconoCarrito">
+                <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
+                <div id="cantidadCarrito">0</div>
+            </span>
+    
+        </div>
+        
+    </header>
+  
     <div class="mainContent">
         <div class="formulario">
-        <h1>Inicio de Sesión</h1>
+            <div class="TituloInicioSesion"><h1>Inicio de Sesión</h1></div>
         <form action="" method="post">
 
             <div class="input">
                 <label for="usuario"></label>
-                <input placeholder="Escriba su nombre de usuario" type="text" id="username" name="username" required>
+                <input placeholder="Escriba su nombre de usuario" type="text" id="username" name="username">
             </div>
             <div class="input">
                 <label for="contrasenia"></label>
-                <input placeholder="Escriba su contraseña" type="password" id="password" name="password" required>
+                <input placeholder="Escriba su contraseña" type="password" id="password" name="password">
             </div>
             <button type="submit">Iniciar Sesión</button>
-            <hr>
+            <div class="rayaO"><hr></div>
         </form>
         <div class="sesionGoogle">
 
