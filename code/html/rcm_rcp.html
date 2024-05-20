@@ -1,0 +1,239 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias de l´abuela</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo">
+
+        </div>
+        <div class="main">
+            <a href="index.html"><span>Home</span></a>
+            <a href="productos.html"><span>Productos</span></a>
+            <a href="about.html"><span>About</span></a>
+        </div>
+        <div class="userCarrito">
+            <a href="inicio-sesion.html">
+
+                <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user"></span>
+            </a>
+            <span style="width: 300px"></span>
+            <span id="iconoCarrito">
+                <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito">
+                <div id="cantidadCarrito">0</div>
+            </span>
+        </div>
+    </header>
+    
+    <div class="RCM_RCP">
+        <br>
+        <br>    
+        <h2>Reporte RCM (Reliability Centered Maintenance)</h2>
+        <h3>Objetivo</h3>
+        <p>Mejorar la fiabilidad y disponibilidad de la página web "Delicias de l´Abuela".</p>
+    
+        <h3>1. Identificación de los activos críticos</h3>
+        <ul>
+          <li>Servidor web: Asegura que la página esté disponible 24/7.</li>
+          <li>Sistema de gestión de contenidos (CMS): Plataforma sobre la cual se desarrolla y mantiene el contenido del sitio.</li>
+          <li>Base de datos: Almacena toda la información crítica, como datos de productos, usuarios y pedidos.</li>
+          <li>Interfaz de usuario (UI): Afecta la experiencia del usuario.</li>
+          <li>Scripts y APIs: Funcionalidades interactivas y comunicaciones con otros sistemas.</li>
+        </ul>
+    
+        <h3>2. Funciones principales de los activos</h3>
+        <ul>
+          <li>Servidor web: Mantener el sitio en línea y accesible.</li>
+          <li>CMS: Facilitar la actualización y gestión del contenido.</li>
+          <li>Base de datos: Almacenar y recuperar información de manera eficiente.</li>
+          <li>UI: Proveer una navegación intuitiva y agradable.</li>
+          <li>Scripts y APIs: Ejecutar funcionalidades y permitir integraciones.</li>
+        </ul>
+    
+        <h3>3. Fallos potenciales y consecuencias</h3>
+        <ul>
+          <li>Servidor web: Tiempo de inactividad, pérdida de accesibilidad.</li>
+          <li>CMS: Fallos en la actualización de contenido, vulnerabilidades de seguridad.</li>
+          <li>Base de datos: Pérdida o corrupción de datos.</li>
+          <li>UI: Mala experiencia del usuario, tasa de rebote alta.</li>
+          <li>Scripts y APIs: Funcionalidades rotas, fallos en la integración.</li>
+        </ul>
+    
+        <h3>4. Estrategias de mantenimiento</h3>
+        <ul>
+          <li>Servidor web: Monitoreo constante, copias de seguridad regulares, actualización del software del servidor.</li>
+          <li>CMS: Actualizaciones periódicas, parches de seguridad, pruebas regulares.</li>
+          <li>Base de datos: Backups diarios, monitoreo de rendimiento, optimización.</li>
+          <li>UI: Pruebas de usabilidad, optimización para dispositivos móviles.</li>
+          <li>Scripts y APIs: Pruebas unitarias, mantenimiento del código, revisión de integraciones.</li>
+        </ul>
+    
+        <h3>5. Implementación y seguimiento</h3>
+        <ul>
+          <li>Definir un calendario de mantenimiento regular.</li>
+          <li>Utilizar herramientas de monitoreo como Pingdom o UptimeRobot.</li>
+          <li>Realizar auditorías de seguridad y rendimiento periódicas.</li>
+        </ul>
+    
+        <h2>Reporte RPM (Reliability Performance Management)</h2>
+        <h3>Objetivo</h3>
+        <p>Monitorear y mejorar el desempeño y la fiabilidad del sitio web "Delicias de l´Abuela".</p>
+    
+        <h3>1. Definición de métricas clave de rendimiento</h3>
+        <ul>
+          <li>Tiempo de actividad (Uptime): Porcentaje del tiempo que el sitio está operativo.</li>
+          <li>Tiempo de carga de la página: Velocidad con la que las páginas del sitio se cargan.</li>
+          <li>Tasa de error: Número de errores que los usuarios encuentran al interactuar con el sitio.</li>
+          <li>Rendimiento del servidor: Uso de CPU, memoria y recursos del servidor.</li>
+          <li>Tasa de conversión: Porcentaje de visitantes que realizan una compra.</li>
+          <li>Tasa de rebote: Porcentaje de visitantes que abandonan el sitio después de ver solo una página.</li>
+        </ul>
+    
+        <h3>2. Monitoreo y recolección de datos</h3>
+        <ul>
+          <li>Utilizar herramientas como Google Analytics para monitorear la tasa de conversión y la tasa de rebote.</li>
+          <li>Emplear servicios como New Relic o Datadog para el monitoreo del rendimiento del servidor.</li>
+          <li>Implementar Google PageSpeed Insights para evaluar y mejorar el tiempo de carga de las páginas.</li>
+        </ul>
+    
+        <h3>3. Análisis y evaluación</h3>
+        <ul>
+          <li>Tiempo de actividad (Uptime): Objetivo ≥ 99.9%.</li>
+          <li>Tiempo de carga de la página: Objetivo < 3 segundos.</li>
+          <li>Tasa de error: Minimizar, idealmente < 0.1%.</li>
+          <li>Rendimiento del servidor: Mantener un uso óptimo de los recursos.</li>
+          <li>Tasa de conversión: Optimizar a través de mejoras en la UX y promociones.</li>
+          <li>Tasa de rebote: Reducir mediante contenido relevante y una mejor experiencia de usuario.</li>
+        </ul>
+    
+        <h3>4. Estrategias de mejora continua</h3>
+        <ul>
+          <li>Implementar un CDN (Content Delivery Network) para mejorar los tiempos de carga.</li>
+          <li>Optimizar el código y los recursos estáticos (imágenes, scripts) para mejorar el rendimiento.</li>
+          <li>Realizar pruebas A/B para optimizar la tasa de conversión.</li>
+          <li>Mejorar la calidad del contenido y la navegación para reducir la tasa de rebote.</li>
+        </ul>
+    
+        <h3>5. Reportes y comunicación</h3>
+        <ul>
+          <li>Generar reportes mensuales de rendimiento utilizando herramientas como Google Data Studio.</li>
+          <li>Realizar reuniones trimestrales para revisar el desempeño y ajustar las estrategias de mantenimiento y mejora.</li>
+        </ul>
+      </div>
+
+    <footer>
+        <div class="contenedorLogos">
+          <div class="abuela">
+    
+            <a href="index.html">
+              <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+            </a>       
+          </div>
+          <div class="logos">
+            <a href="https://www.instagram.com">
+              <img class="logoRRSS" src="../img/instagram.png" alt="insta" />
+            </a>
+            <a href="https://www.facebook.com">
+              <img class="logoRRSS" src="../img/facebook.png" alt="facebook" />
+            </a>
+            <a href="https://twitter.com">
+              <img class="logoRRSS" src="../img/twitter.png" alt="equis" />
+            </a>
+          </div>
+        </div>
+    
+        <div class="datosfoot">
+          <div>
+            <h3>Contacto</h3>
+            <li>Telefonos de contacto:</li>
+            <li>+34 679 640 570</li>
+            <li>E-mail:</li>
+            <li>deliciasDelAbuela@delicias.es</li>
+          </div>
+          <div>
+            <h3>Información</h3>
+            <div>
+              <li>Sobre Nosotros</li>
+              <!--Añadir hipervínculo-->
+              <li><a href="../img/trolleito.jpg">Política de cookies</a></li>
+              <li><a href="https://ads.google.com/intl/es_es/home/">Publicidad</a></li>
+              <li><a href="https://knoweats.com/?utm_medium=cpc&utm_source=google&utm_campaign=1.Branding&utm_term=&utm_content=knoweats&gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qbK2WHVsWx1rCQ81LCHyvQJ47_mj9qGkm5IO1luJa7MVyegmnyUzgaArMeEALw_wcB">Afiliados</a></li>
+              <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+            </div>
+          </div>
+    
+          <div>
+            <h3>Empresa</h3>
+            <li>Nuestros envíos</li>
+            <li>Eat local, eat fresh, eat green</li>
+            <li>Cómo trabajamos</li>
+    
+            <li>
+    
+              <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed"/></a>
+            </li>
+          </div>
+        </div>
+        <div class="metodosPago">Métodos de Pago:
+          <br>
+          <br>
+          <span class="metodo">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+          </span>
+          <span class="metodo">
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+          </span>
+          <span class="metodo">
+              <img src="https://img.icons8.com/color/48/000000/bitcoin.png" alt="Bitcoin">
+          </span>
+          <span class="metodo">
+              <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+          </span>
+      </div>
+      </footer>
+      <div class="cookies">
+        © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
+        <!--JS poner fecha de hoy-->
+      </div>
+    
+      <aside id="asideCarrito" class="aside-carrito">
+        <div id="cerrarAside" class="cerrar-aside">X</div>
+    
+        <!-- Contenido del aside aquí -->
+        <div id="mensajeNoProductos">
+          <div>No hay productos seleccionados.</div>
+          <div>
+            <button>Seguir comprando</button>
+          </div>
+        </div>
+        <aside id="mensajeProductos">
+          <h2>Carrito</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carritoLista" class="elementos-carrito"></ul>
+          <hr />
+          <!-- Precio total -->
+          <p class="texto_derecha">Total: <span id="total">0.00</span>&euro;</p>
+          <button id="boton-vaciar">Vaciar<img src="../img/papelera.png" alt="" srcset=""></button>
+        </aside>
+      </aside>
+      <div id="overlay" class="overlay"></div>
+    
+      <div class="boton-subir">
+        <button onclick="subirArriba()" title="Subir arriba">
+          <i class="fas fa-arrow-up"></i> <!-- Icono de flecha hacia arriba -->
+        </button>
+      </div>
+      <script src="../js/botonSubir.js"></script>
+      <script src="../js/carrito.js"></script>
+    
+    </body>
+    
+    </html>

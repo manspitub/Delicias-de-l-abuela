@@ -1049,3 +1049,47 @@ div.errores{
     color: #797979;
 
 }
+
+/*RCM_RCP*/
+
+.RCM_RCP{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.RCM_RCP h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .RCM_RCP  h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .RCM_RCP p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .RCM_RCP ul {
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+  
+  .RCM_RCP ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+  }
+  
