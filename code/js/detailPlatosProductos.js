@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const imagenes = document.querySelectorAll(".ImagenesCarrusel");
+    const imagenes = document.querySelectorAll(".ImagenesProductos");
     const modal = document.getElementById("myModal");
     const modalImage = document.getElementById("modalImage");
     const modalDescription = document.getElementById("modalDescription");
@@ -137,8 +137,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
-    
     const botonPedir = document.getElementById('boton-pedir');
     const modalConfirmacionPedido = document.getElementById('modalConfirmacionPedido');
     const closeConfirmacion = document.getElementById('closeConfirmacion');
