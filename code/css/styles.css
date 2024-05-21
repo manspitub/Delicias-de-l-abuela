@@ -304,6 +304,7 @@ button {
     width: 70%;
     height: 70px;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
@@ -336,7 +337,6 @@ button {
     width: 70%;
 }
 div.formulario {
-    opacity: 0.7;
     margin-top: 100px;
     height: 60%;
     width: 100%;
@@ -358,13 +358,10 @@ div.formulario {
 }
 
 form {
-
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
 }
 
 .input {
