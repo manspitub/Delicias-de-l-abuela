@@ -419,6 +419,10 @@ div.sesionGoogle img {
 
 /*FORMULARIO DE ERRORES*/
 
+
+.errorContainer{
+    width: 60%;
+}
 div.errores{
     width: 100%;
     display: block;
