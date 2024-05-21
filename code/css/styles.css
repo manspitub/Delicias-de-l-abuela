@@ -332,11 +332,14 @@ button {
 
 
 /*FORMULARIO DE INICIO DE SESIÓN*/
-
+.errorContainer{
+    width: 70%;
+}
 div.formulario {
-    margin: 100px;
+    opacity: 0.7;
+    margin-top: 100px;
     height: 60%;
-    width: 40%;
+    width: 100%;
     color: black;
     display: flex;
     justify-content: center;
@@ -344,7 +347,10 @@ div.formulario {
     flex-direction: column;
     border: 2px solid black;
     border-radius: 20px;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
+    background-size: cover;
     background-color: #152822;
     /* Esto hace que la imagen de fondo cubra todo el formulario */
     background-position: center;
@@ -412,10 +418,12 @@ div.sesionGoogle img {
 
 /*FORMULARIO DE ERRORES*/
 
+
+.errorContainer{
+    width: 60%;
+}
 div.errores{
-    float: unset;
-    height: 80px;
-    width: 80px;
+    width: 100%;
     display: block;
     border: 1px solid red;
     color: red;
