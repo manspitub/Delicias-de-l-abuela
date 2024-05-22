@@ -1,4 +1,3 @@
-
 body {
     background-color: #ede5d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,7 +5,7 @@ body {
 }
 
 header {
-    
+
     justify-content: space-around;
     position: fixed;
     display: flex;
@@ -71,14 +70,14 @@ main {
 }
 
 
-a{
+a {
     color: white;
     text-decoration: underline transparent;
     transition: text-decoration-color 0.5s ease;
 
 }
 
-a:hover{
+a:hover {
     text-decoration-color: lightblue;
 }
 
@@ -91,31 +90,43 @@ a:hover{
     display: flex;
 }
 
-.carrito{
+.carrito {
     position: relative;
     display: inline-block;
 }
 
-.cantidadCarrito{
+#iconoCarrito {
+    position: relative;
+}
+
+
+#cantidadCarrito {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 0;
+    right: 0;
     background-color: rgb(147, 18, 134);
-    color: white;
+    color: white; 
     border-radius: 50%;
     padding: 5px 8px;
     font-size: 12px;
 }
 
+
 .aside-carrito {
     position: fixed;
     top: 0;
-    right: -400px; /* Oculta el aside fuera del viewport */
-    width: 400px; /* Ancho del aside */
-    height: 100%; /* Altura del aside */
-    background-color: #fff; /* Color de fondo del aside */
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
-    transition: right 0.3s ease; /* Transición para suavizar el despliegue */
+    right: -400px;
+    /* Oculta el aside fuera del viewport */
+    width: 400px;
+    /* Ancho del aside */
+    height: 100%;
+    /* Altura del aside */
+    background-color: #fff;
+    /* Color de fondo del aside */
+    z-index: 1000;
+    /* Asegura que esté sobre otros elementos */
+    transition: right 0.3s ease;
+    /* Transición para suavizar el despliegue */
 }
 
 .overlay {
@@ -124,14 +135,17 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
-    z-index: 999; /* Coloca el overlay por encima de todo, excepto del aside */
-    display: none; /* Inicialmente oculto */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo semi-transparente oscuro */
+    z-index: 999;
+    /* Coloca el overlay por encima de todo, excepto del aside */
+    display: none;
+    /* Inicialmente oculto */
 }
 
 
 
-#mensajeNoProductos{
+#mensajeNoProductos {
     display: none;
     width: 100%;
     color: #152822;
@@ -140,12 +154,14 @@ a:hover{
     flex-direction: column;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Mueve el div al centro */
+    transform: translate(-50%, -50%);
+    /* Mueve el div al centro */
     /* Estilos adicionales para el div centrado */
 }
 
-#mensajeNoProductos div{
-    margin: 0 60px 20px; /* Establece márgenes automáticos para centrar */
+#mensajeNoProductos div {
+    margin: 0 60px 20px;
+    /* Establece márgenes automáticos para centrar */
 }
 
 
@@ -154,7 +170,8 @@ a:hover{
 
 
 .aside-carrito.blur-none {
-    filter: none; /* Elimina el desenfoque del aside */
+    filter: none;
+    /* Elimina el desenfoque del aside */
 }
 
 .cerrar-aside {
@@ -175,7 +192,7 @@ footer {
     display: flex;
     background-color: #152822;
     padding: 30px;
-    
+
     margin: -8.4px;
 }
 
@@ -191,7 +208,7 @@ footer>.datosfoot>div {
     padding: 20px;
     border: 1px solid white;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: center;    
     text-align: center;
 }
 
@@ -201,8 +218,27 @@ footer>.datosfoot>div {
     padding-bottom: 10px;
 }
 
+.metodosPago {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
 
+.metodo {
+    display: inline-block;
+    margin: 0 10px;
+}
 
+.metodo img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.metodo img:hover {
+    transform: scale(1.1);
+}
 
 .cookies {
     font-weight: bold;
@@ -214,7 +250,7 @@ footer>.datosfoot>div {
 .mainContent {
     margin: 190px;
     margin-top: calc(150px);
-    margin-bottom: calc(100px ); 
+    margin-bottom: calc(100px);
     display: flex;
     position: relative;
     justify-content: center;
@@ -227,15 +263,17 @@ footer>.datosfoot>div {
     display: flex;
     justify-content: space-between;
     width: 80%;
-  }
-  
-  .presentacion > div {
+}
+
+.presentacion>div {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 500px; /* Cambiar width a max-width */
-    width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
-  }
+    max-width: 500px;
+    /* Cambiar width a max-width */
+    width: 100%;
+    /* Asegurarse de que ocupe todo el ancho disponible */
+}
 
 .presentacion h1 {
     color: #152822;
@@ -258,7 +296,7 @@ footer>.datosfoot>div {
 
 
 
- button {
+button {
 
     color: white;
     font-size: larger;
@@ -286,7 +324,7 @@ footer>.datosfoot>div {
 }
 
 .imgPrincipal {
-    
+
     justify-content: center;
     display: flex;
     align-items: center;
@@ -295,32 +333,39 @@ footer>.datosfoot>div {
 
 /*FORMULARIO DE INICIO DE SESIÓN*/
 
-div.formulario{
+div.formulario {
     opacity: 0.7;
-    background-color: rgba(35, 145, 13, 0.9); /* #b3663a con 50% de opacidad */
     margin: 100px;
     height: 60%;
     width: 40%;
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;   
-    flex-direction: column;   
-    border: 2px solid black; 
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
     border-radius: 20px;
     padding: 10px;
+    background-image: url('../img/Fondo-cocina.jpeg');
+    /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
+    background-size: cover;
+    /* Esto hace que la imagen de fondo cubra todo el formulario */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    opacity: 0.8;
 }
-form{
-    
+
+form {
+
     width: 100%;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
     text-align: center;
 
 
 }
 
-.input{
+.input {
     align-items: center;
     width: 100%;
     margin-bottom: 45px;
@@ -328,7 +373,8 @@ form{
 
 }
 
-.input input[type="text"], input[type="password"]{
+.input input[type="text"],
+input[type="password"] {
     font-size: 25px;
     background-color: #eadfbc;
     padding: 10px;
@@ -337,7 +383,7 @@ form{
     width: 80%;
 }
 
-div.sesionGoogle{
+div.sesionGoogle {
     height: 50px;
     text-align: center;
     width: 300px;
@@ -345,18 +391,18 @@ div.sesionGoogle{
     vertical-align: middle;
 }
 
-div.sesionGoogle a{
+div.sesionGoogle a {
     width: 100%;
 }
 
-div.sesionGoogle img{
+div.sesionGoogle img {
     display: inline-block;
     vertical-align: middle;
     width: 10%;
     margin-right: 20px;
 }
 
-#google{
+#google {
     height: 80%;
     padding: auto;
     text-align: right;
@@ -364,47 +410,86 @@ div.sesionGoogle img{
     width: 100%;
     background-color: #ffffff;
     color: black;
-    
+
+}
+
+
+/*FORMULARIO DE ERRORES*/
+
+div.errores{
+    float: unset;
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: 1px solid red;
+    color: red;
+}
+
+.rayaO {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.TituloInicioSesion {
+    background-color: rgb(70, 7, 95);
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 /*CSS CARRUSEL*/
 .carrusel {
     position: relative;
     max-width: 100%;
-    max-height: 600px; /* Ajusta según sea necesario */
+    width: 100%;
+    max-height: 600px;
+    /* Ajusta según sea necesario */
     overflow: hidden;
 }
 
 .carruselImagenes {
     display: flex;
-    transition: transform 0.5s ease; /* Ajusta la duración y la función de transición */
     position: relative;
+    width: 100%;
 }
 
 .imagenContainer {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 80%;
     object-fit: cover;
-    margin-right: 10px; /* Espacio entre las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 10px;
+    /* Espacio entre las imágenes */
+    border-radius: 10px;
+    /* Bordes redondeados */
     position: relative;
-    overflow: hidden; /* Asegura que el borde no se extienda fuera de la imagen */
-    border: 2px solid transparent; /* Borde transparente inicial */
-    transition: border-color 0.3s ease; /* Transición para el cambio de color del borde */
+    overflow: hidden;
+    /* Asegura que el borde no se extienda fuera de la imagen */
+    border: 0px solid transparent;
+    /* Borde transparente inicial */
+    transition: border-color 0.3s ease;
+    /* Transición para el cambio de color del borde */
+    cursor: pointer;
 }
 
 .imagenContainer:hover {
-    border-color: rgba(0, 0, 0, 0.5); /* Cambia el color del borde al pasar el mouse */
+    border-color: rgba(0, 0, 0, 0.5);
+    /* Cambia el color del borde al pasar el mouse */
 }
 
 .ImagenesCarrusel {
-    width: 640px;
-    height: 600px; /* Ajusta la altura según sea necesario */
+    width: 700px;
+    height: 550px;
+    /* Ajusta la altura según sea necesario */
     object-fit: cover;
 }
 
-.precio{
-    border-radius: 10px; /* Bordes redondeados */
+.precio {
+    border-radius: 10px;
+    /* Bordes redondeados */
     position: absolute;
     top: 10px;
     left: 10px;
@@ -430,6 +515,7 @@ div.sesionGoogle img{
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    overflow-y: scroll;
 }
 
 .imagenContainer:hover .descripcion {
@@ -459,98 +545,114 @@ div.sesionGoogle img{
 }
 
 #btnSiguiente {
-    right: 0px;
+    right: 12px;
 }
 
-.botonesCarrusel:hover {
-    background: rgba(0, 0, 0, 1); 
+#btnAnterior:hover,
+#btnSiguiente:hover {
+    background: rgba(255, 255, 255, 0.5); /* Cambia el color de fondo al pasar el ratón */
+    color: black; /* Cambia el color del texto para que sea visible sobre el fondo */
 }
 
-.mostrarPlatos{
+
+.mostrarPlatos {
     font-size: 2.7em;
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
     color: #152822;
     font-weight: bold;
-  }
-        /*CSS VALORACIONES*/
-        .tituloValoraciones{
-            text-align: center;
-            font-size: 3em;
-            color: #152822;
-            margin-top: 60px;
-        
-            }
-        
-        .valoraciones > h3 {
-            position: relative;
-            font-weight: bold; /* Pone el texto en negrita */
-            z-index: 3;
-            padding: 10px; /* Añadir un poco de espacio alrededor del texto */
-        }
-        
-        .valoraciones {
-            display: flex;
-            background-color: #ede5d9;
-            padding: 20px; 
-            justify-content: space-between;
-        }
-        
-        .valoraciones > div {
-            position: relative; /* Añade posicionamiento relativo al contenedor del texto */
-            padding: 10px;
-            width: 33%;
-            text-align: center; /* Centra el texto horizontalmente */
-            border: 2px solid rgb(0, 0, 0);
-            border-radius: 20px;
-            flex: 1; 
-            margin: 0 30px;
-            padding: 20px;
-            margin-top: 50px;
-            margin-bottom: 100px; /* Añadir margen inferior */
-            transition: transform 0.3s ease;
-        }
+}
 
-        .valoraciones > div:hover {
-            transform: scale(1.1);
-        }
-        
-        .valoraciones > div > h3 {
-            position: relative; /* Añade posicionamiento relativo al texto */
-            z-index: 2; /* Establece un z-index más alto que el de las imágenes de fondo */
-            color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible en la imagen */
-            padding: 10px; /* Añade un poco de espacio alrededor del texto */
-            font-weight: bold; /* Pone el texto en negrita */
-        }
-        
-        .valoraciones > div > h3.textoSobreMorado {
-            color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en la imagen */
-        }
-        
-        .valoraciones .imagenFondo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            filter: blur(4px);
-            border-radius: 19px;
-            z-index: 1;
-        }
-        
-        /*CSS ESTRELLAS*/
-        .valoraciones > div > .estrellas {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .estrellas .estrella {
-            color: gold;
-            font-size: 30px;
-        }
+/*CSS VALORACIONES*/
+.tituloValoraciones {
+    text-align: center;
+    font-size: 3em;
+    color: #152822;
+    margin-top: 60px;
+
+}
+
+.valoraciones>h3 {
+    position: relative;
+    font-weight: bold;
+    /* Pone el texto en negrita */
+    z-index: 3;
+    padding: 10px;
+    /* Añadir un poco de espacio alrededor del texto */
+}
+
+.valoraciones {
+    display: flex;
+    background-color: #ede5d9;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.valoraciones>div {
+    position: relative;
+    /* Añade posicionamiento relativo al contenedor del texto */
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    flex: 1;
+    margin: 0 30px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* Añadir margen inferior */
+    transition: transform 0.3s ease;
+}
+
+.valoraciones>div:hover {
+    transform: scale(1.1);
+}
+
+.valoraciones>div>h3 {
+    position: relative;
+    /* Añade posicionamiento relativo al texto */
+    z-index: 2;
+    /* Establece un z-index más alto que el de las imágenes de fondo */
+    color: rgb(0, 0, 0);
+    /* Cambia el color del texto para que sea visible en la imagen */
+    padding: 10px;
+    /* Añade un poco de espacio alrededor del texto */
+    font-weight: bold;
+    /* Pone el texto en negrita */
+}
+
+.valoraciones>div>h3.textoSobreMorado {
+    color: rgb(255, 255, 255);
+    /* Cambia el color del texto para que sea visible en la imagen */
+}
+
+.valoraciones .imagenFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    border-radius: 19px;
+    z-index: 1;
+}
+
+/*CSS ESTRELLAS*/
+.valoraciones>div>.estrellas {
+    position: relative;
+    z-index: 2;
+}
+
+.estrellas .estrella {
+    color: gold;
+    font-size: 30px;
+}
+
 /*ABOUT*/
 
 .imgAbout img {
@@ -595,24 +697,25 @@ div.sesionGoogle img{
 
 /*Productos*/
 
-.tipoPlatos{
+.tipoPlatos {
     display: flex;
     width: 100%;
 }
 
-.tipoPlatos ul{
+.tipoPlatos ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-.tipoPlatos li{
+.tipoPlatos li {
     padding: 10px;
     color: black;
     font-weight: bold;
     list-style-type: none;
     font-size: 1.3em;
     border: 2px solid black;
-    border-radius:20px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -623,7 +726,7 @@ div.sesionGoogle img{
     margin: 30px;
 }
 
-.categoriaPlatos{
+.categoriaPlatos {
     display: flex;
     justify-content: center;
     /* Centra horizontalmente */
@@ -633,8 +736,6 @@ div.sesionGoogle img{
     font-weight: bold;
 }
 
-
-
 .descripcionProducto {
     flex: 1;
 }
@@ -643,7 +744,8 @@ div.sesionGoogle img{
     width: 700px;
     height: auto;
     border-radius: 10px;
-    margin-left: 20px; /* Muevo la imagen a la derecha */
+    margin-left: 20px;
+    /* Muevo la imagen a la derecha */
 }
 
 .descripcionProducto p {
@@ -659,22 +761,38 @@ div.sesionGoogle img{
     font-weight: bold;
 }
 
-
-.platos{
+/* Para centrar horizontalmente los contenedores de platos */
+#masVendidos, #postres, #veganos {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  .platos {
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-}
+  }
+  
+  .platos li {
+    width: calc(33.33% - 20px); /* Ancho para mostrar tres imágenes en una fila */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ajustar el tamaño del borde y el relleno al ancho especificado */
+  }
 
-.platos li{
-    
-    list-style-type: none;
-    
-}
+  .ImagenesProductos{
+    width: 500px;
+    height: 380px;
+  }
 
+  .botonesProductos:hover{
+    background-color: black;
+  }
+  
 
 /*Modal*/
 
 .modal {
+    text-align: center;
     color: black;
     display: none;
     position: fixed;
@@ -685,9 +803,9 @@ div.sesionGoogle img{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     overflow: auto;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
@@ -695,53 +813,239 @@ div.sesionGoogle img{
     width: 80%;
     max-width: 600px;
     position: relative;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .modal-image {
+}
+
+.modal-image {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-  }
-  
-  .modal-description {
-    margin-bottom: 10px;
-  }
-  
-  .modal-price {
-    font-weight: bold;
-  }
+}
 
- /* Estilos para los alérgenos en el modal */
-    .modal-alergenos {
-    margin-top: 20px;
-  }
-  
-  .modal-alergenos h2 {
+.modal-description {
     margin-bottom: 10px;
-  }
+}
+
+.modal-price {
+    font-weight: bold;
+}
+
+/* Estilos para los alérgenos en el modal */
+.modal-alergenos {
+    margin-top: 20px;
+}
+
+.modal-alergenos h2 {
+    margin-bottom: 10px;
+}
   
   .modal-alergenos ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .modal-alergenos li {
+    display: flex;
+    justify-content: space-between;
+}
+∫
+.modal-alergenos li {
     margin-bottom: 5px;
+}
+
+  button:hover{
+    opacity: 200;
   }
-  
+
+ 
+
+ /* Estilo general para el aside */
+ #mensajeProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; 
+    height: 100%;
+    overflow: auto;
+}
+
+/* Estilo para el título del carrito */
+#mensajeProductos h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para la lista de elementos del carrito */
+.elementos-carrito {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    
+}
+
+/* Estilo para cada elemento de la lista del carrito */
+.carrito-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f0ec;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.carrito-img {
+    width: 100px; 
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.carrito-texto {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.producto-cantidad {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilo para el precio total */
+.texto_derecha {
+    text-align: right;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Estilo para el botón de vaciar carrito */
+#boton-vaciar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+#boton-vaciar img{
+    width: 15%;
+}
 
 
+#boton-vaciar:hover {
+    background-color: #c0392b;
+
+}
+
+/*RSS*/
+
+.RSS {
+    text-align: left;
+    margin: 160px auto 100px auto;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.RSS h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.RSS p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.RSS strong {
+    color: #555;
+}
+
+.RSS a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.RSS a:hover {
+    text-decoration: underline;
+}
+
+.RSS h3 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 1.3em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/*PREGUNTAS FRECUENTES*/
+.mainPreguntasFrecuentes {
+    padding: 20px;
+    background-color: #ede5d9;
+    text-align: center;
+}
+
+.mainPreguntasFrecuentes h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.mainPreguntasFrecuentes section {
+    margin-bottom: 40px;
+}
+
+.mainPreguntasFrecuentes h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.mainPreguntasFrecuentes .faq-item {
+    margin-bottom: 20px;
+}
+
+.mainPreguntasFrecuentes h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+.mainPreguntasFrecuentes p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #797979;
+
+}
