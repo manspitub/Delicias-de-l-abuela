@@ -332,98 +332,114 @@ button {
 
 
 /*FORMULARIO DE INICIO DE SESIÓN*/
-.errorContainer{
-    width: 70%;
-}
 div.formulario {
     margin-top: 100px;
-    height: 60%;
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #152822;
     border-radius: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
-    background-size: cover;
+    padding: 20px;
     background-color: #152822;
-    /* Esto hace que la imagen de fondo cubra todo el formulario */
+    background-size: cover;
     background-position: center;
-    /* Centra la imagen de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 .input {
-    align-items: center;
     width: 100%;
-    margin-bottom: 45px;
-    height: 40px;
-
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .input input[type="text"],
-input[type="password"] {
-    font-size: 25px;
+.input input[type="password"] {
+    font-size: 18px;
     background-color: #eadfbc;
     padding: 10px;
+    border: none;
     border-radius: 20px;
-    height: 100%;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button[type="submit"]:hover {
+    background-color: forestgreen;
 }
 
 div.sesionGoogle {
-    height: 50px;
     text-align: center;
-    width: 300px;
     margin-top: 20px;
-    vertical-align: middle;
 }
 
 div.sesionGoogle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 div.sesionGoogle img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 10%;
-    margin-right: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #google {
     height: 80%;
     padding: auto;
-    text-align: right;
-    border-radius: 40px;
-    width: 100%;
+    text-align: center;
+    border-radius: 20px;
     background-color: #ffffff;
     color: black;
-
+    width: 100%;
 }
+
 
 
 /*FORMULARIO DE ERRORES*/
+.error-message {
+    color: #fff;
+    background-color: firebrick;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
 
 
-.errorContainer{
-    width: 60%;
-}
-div.errores{
-    width: 100%;
-    display: block;
-    border: 1px solid red;
-    color: red;
-}
 
 .rayaO {
     margin-top: 30px;
@@ -431,14 +447,8 @@ div.errores{
 }
 
 .TituloInicioSesion {
-    background-color: #b9622c;
-    box-sizing: border-box;
-    border-radius: 30px;
     margin-bottom: 10px;
     color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 /*CSS CARRUSEL*/
