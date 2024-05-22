@@ -909,12 +909,15 @@ div.sesionGoogle img {
 
 /* Estilo para cada elemento de la lista del carrito */
 .carrito-item {
+    min-height: 7rem;
+    overflow: hidden;
+    position: relative;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #f2f0ec;
     border-radius: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -923,20 +926,31 @@ div.sesionGoogle img {
 }
 
 .carrito-img {
-    width: 100px; 
-    margin-right: 10px;
-    border-radius: 4px;
+    width: 33%;
+    height: 100%;
+    margin-right: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .carrito-texto {
     color: black;
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
 }
 
 .producto-titulo {
+
+    width: 250px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
+    overflow-y: hidden;
 }
 
 .producto-cantidad {
