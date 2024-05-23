@@ -395,6 +395,7 @@ button[type="submit"]:hover {
 div.sesionGoogle {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 18px;
 }
 
 div.sesionGoogle a {
@@ -418,8 +419,8 @@ div.sesionGoogle img {
 }
 
 #google {
-    height: 80%;
-    padding: auto;
+    height: 100%;
+    padding: 8px;
     text-align: center;
     border-radius: 20px;
     background-color: #ffffff;
