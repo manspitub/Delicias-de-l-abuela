@@ -746,6 +746,17 @@ div.sesionGoogle img {
     font-weight: bold;
 }
 
+.categorias {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 50px;
+}
+
+#indiceMasVendidos,#indiceVeganos,#indicePostres{
+    height: 120px;
+}
+
 .descripcionProducto {
     flex: 1;
 }
@@ -794,10 +805,21 @@ div.sesionGoogle img {
     height: 380px;
   }
 
-  .botonesProductos:hover{
+  .botonesProductos.selected{
     background-color: black;
   }
+
+  #veganos.hidden{
+    display: none;
+  }
   
+  #masVendidos.hidden{
+    display: none;
+  }
+
+  #postres.hidden{
+    display: none;
+  }
 
 /*Modal*/
 
@@ -1215,7 +1237,7 @@ button > img{
     width: 80%;
     max-width: 500px; /* Ancho máximo para el contenido modal */
     text-align: center;
-}
+}   
 
 /* Spinner */
 .spinner {
@@ -1234,4 +1256,3 @@ button > img{
 }
   
 
-  
