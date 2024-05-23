@@ -304,20 +304,20 @@ button {
     width: 70%;
     height: 70px;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
 
 .presentacion li::before {
-    content: "\2713";
-    /* Símbolo de check en Unicode */
+    content: "\2714";
     color: green;
-    /* Color del check */
     font-size: 20px;
-    /* Tamaño del check */
     margin-right: 10px;
-    /* Espacio entre el check y el texto */
 }
+
+
+
 
 .imgPrincipal img {
     border-radius: 10%;
@@ -332,94 +332,114 @@ button {
 
 
 /*FORMULARIO DE INICIO DE SESIÓN*/
-
 div.formulario {
-    margin: 100px;
-    height: 60%;
-    width: 40%;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 500px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #152822;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: #152822;
-    /* Esto hace que la imagen de fondo cubra todo el formulario */
+    background-size: cover;
     background-position: center;
-    /* Centra la imagen de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
-
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-
-
 }
 
 .input {
-    align-items: center;
     width: 100%;
-    margin-bottom: 45px;
-    height: 40px;
-
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .input input[type="text"],
-input[type="password"] {
-    font-size: 25px;
+.input input[type="password"] {
+    font-size: 18px;
     background-color: #eadfbc;
     padding: 10px;
+    border: none;
     border-radius: 20px;
-    height: 100%;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button[type="submit"]:hover {
+    background-color: forestgreen;
 }
 
 div.sesionGoogle {
-    height: 50px;
     text-align: center;
-    width: 300px;
     margin-top: 20px;
-    vertical-align: middle;
 }
 
 div.sesionGoogle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 div.sesionGoogle img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 10%;
-    margin-right: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #google {
     height: 80%;
     padding: auto;
-    text-align: right;
-    border-radius: 40px;
-    width: 100%;
+    text-align: center;
+    border-radius: 20px;
     background-color: #ffffff;
     color: black;
-
+    width: 100%;
 }
+
 
 
 /*FORMULARIO DE ERRORES*/
-
-div.errores{
-    float: unset;
-    height: 80px;
-    width: 80px;
-    display: block;
-    border: 1px solid red;
-    color: red;
+.error-message {
+    color: #fff;
+    background-color: firebrick;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
+
+
 
 .rayaO {
     margin-top: 30px;
@@ -427,14 +447,8 @@ div.errores{
 }
 
 .TituloInicioSesion {
-    background-color: #b9622c;
-    box-sizing: border-box;
-    border-radius: 30px;
     margin-bottom: 10px;
     color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 /*CSS CARRUSEL*/
@@ -917,12 +931,15 @@ div.errores{
 
 /* Estilo para cada elemento de la lista del carrito */
 .carrito-item {
+    min-height: 7rem;
+    overflow: hidden;
+    position: relative;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #f2f0ec;
     border-radius: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -931,20 +948,31 @@ div.errores{
 }
 
 .carrito-img {
-    width: 100px; 
-    margin-right: 10px;
-    border-radius: 4px;
+    width: 33%;
+    height: 100%;
+    margin-right: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .carrito-texto {
     color: black;
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
 }
 
 .producto-titulo {
+
+    width: 250px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
+    overflow-y: hidden;
 }
 
 .producto-cantidad {
@@ -1095,46 +1123,45 @@ button > img{
 
 /*RCM_RCP*/
 
-.RCM_RCP{
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.ERP_CRM {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #152822;
 }
 
-.RCM_RCP h2 {
+.ERP_CRM h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #333;
-    border-bottom: 2px solid #ddd;
+    color: #8b0000;
+    border-bottom: 2px solid #152822;
     padding-bottom: 5px;
-  }
-  
-  .RCM_RCP  h3 {
+}
+
+.ERP_CRM h3 {
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .RCM_RCP p {
+    color: #8b0000;
+}
+
+.ERP_CRM p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: #666;
-  }
-  
-  .RCM_RCP ul {
-    margin: 0 0 20px 20px;
-    padding: 0;
-  }
-  
-  .RCM_RCP ul li {
+}
+
+.ERP_CRM ul {
+    margin-left: 20px;
+}
+
+.ERP_CRM ul li {
     margin-bottom: 10px;
-    font-size: 1em;
-    color: #444;
-  }
+}
+
   
 /*ENVIOS*/
 .envios {
