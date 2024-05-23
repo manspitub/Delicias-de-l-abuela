@@ -20,7 +20,9 @@
     <header>
       <div>
         <span>
-          <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+          <a href="index.html">
+            <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+          </a>
 
           <!-- CAMBIAR FORMATO A PNG BUENO -->
         </span>
@@ -45,428 +47,29 @@
         </span>
       </div>
     </header>
-    <div class="mainContent">
+    <div class="categorias">
       <div class="tipoPlatos">
         <ul>
-          <li class="botonesProductos"><a href="productos.html">Todos</a></li>
-          <li class="botonesProductos">
-            <a href="#masVendidos">Mas vendidos</a>
-          </li>
-          <li class="botonesProductos"><a href="#veganos">Veganos</a></li>
-          <li class="botonesProductos"><a href="#postres">Postres</a></li>
+          <li class="botonesProductos"><a href="#indiceMasVendidos">Mas vendidos</a></li>
+          <li class="botonesProductos"><a href="#indiceVeganos">Veganos</a></li>
+          <li class="botonesProductos"><a href="#indicePostres">Postres</a></li>
         </ul>
       </div>
     </div>
-
+    <div id="indiceMasVendidos"></div>
     <div id="masVendidos">
       <div class="categoriaPlatos">
         <div class="linea"></div>
         <h2>Platos Más Vendidos</h2>
         <div class="linea"></div>
       </div>
-
+  
       <ul class="platos">
+  
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">7,50€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/guiso-de-ternera-arroz-y-verduras_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Comenzamos sofriendo lentamente cebolla, ajo, pulpa de pimiento
-              choricero y zanahoria e incorporamos champiñones y tomate
-              concentrado. Mojamos con vino tinto y especiamos con comino y
-              tomillo para incorporar nuestro caldo casero de ternera.
-              Finalmente, cocinamos la carne de ternera a baja temperatura
-              asegurándonos que quede melosa para rematar este guiso completando
-              con patatas cocidas al vapor.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/sopa-criolla-limena_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Para este clásico plato peruano, comenzamos sofriendo lentamente
-              cebolla morada junto con ajo y jengibre. Incorporamos pasta de ají
-              panka que le aporta la alegría tan característica a este plato.
-              Cocinamos con nuestro caldo de cerdo. Para rematar incorporamos
-              cilantro fresco. Como guarnición acompañamos con pasta de trigo y
-              carne de cerdo desmigada.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/salmon-con-salsa-provenzal-patatas-y-verduras-variadas_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Para este clásico plato peruano, comenzamos sofriendo lentamente
-              cebolla morada junto con ajo y jengibre. Incorporamos pasta de ají
-              panka que le aporta la alegría tan característica a este plato.
-              Cocinamos con nuestro caldo de cerdo. Para rematar incorporamos
-              cilantro fresco. Como guarnición acompañamos con pasta de trigo y
-              carne de cerdo desmigada.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/pavo-con-salsa-tunecina-cous-cous-y-verduritas_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Cocinamos a baja temperatura la pechuga de pavo asegurándonos que
-              quede cocida y perfectamente jugosa. Para la salsa comenzamos
-              sofriendo cebolla morada junto con ajo y jengibre. Incorporamos
-              ciruelas pasas que aportan ese punto de dulzor y especiamos con
-              comino y cayena, el zumo de limón realza el conjunto con su
-              acidez. Para rematar el plato acompañamos con cous cous y
-              verduras.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/contramuslo-con-salsa-de-yogurt-y-menta-cous-cous-y-verduras_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Cocinamos el contramuslo a alta temperatura asegurándonos de que
-              quede un bonito color dorado y a la vez jugoso. Para la salsa
-              sofreímos ajo junto con cebolla, e incorporamos un poco de
-              jengibre y pimentón. Mojamos con nuestro caldo de pollo tostado y
-              cocinamos lentamente. A último momento incorporamos el yogur y la
-              menta fresca. Como acompañamiento, cous cous y un mix de verduras.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/merluza-en-salsa-verde_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Un lomo de merluza, limpio de espinas y listo para comer, cocinado
-              a baja temperatura, acompañado de patatas y una salsa verde de su
-              fumet. Terminamos con perejil fresco y un chorrito de aceite de
-              oliva.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/albondigas-con-salsa-toscana-patatas-cebollitas-y-brocoli_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Empezamos marcando las albóndigas a fuego fuerte. Para la salsa
-              comenzamos sofriendo zanahorias y cebolla morada. Incorporamos un
-              poco de pasta de tomate y ajo confitado, mojamos con vino y
-              añadimos nuestro caldo de ternera casero. Cocinamos todo a fuego
-              suave. Para rematar y redondear los sabores incorporamos un poco
-              de nata e introducimos las albóndigas en la salsa para guisarlas
-              con el conjunto. Para completar el plato, patatas asadas, brócoli
-              y unas cebollitas francesas.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/pollo-con-salsa-yakarta-arroz-y-verduras_B.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Cocinamos el pollo a alta temperatura en el horno asegurándonos
-              que quede cocido y a la vez jugoso. Para la salsa sofreímos
-              chipotles junto con zumo de lima y curcuma. Para rematar el arroz
-              y el mix de verduras crean un equilibrio perfecto.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Veganos -->
-
-    <div id="veganos">
-      <div class="categoriaPlatos">
-        <div class="linea"></div>
-        <h2>Veganos</h2>
-        <div class="linea"></div>
-      </div>
-
-      <ul class="platos">
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">7,50€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Albondigasensalsaconpatatadado.webp"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/ensalada.jpeg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/lasaña.png"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/Estofado.jpg" alt="" />
             <div class="descripcion">
               Estofado de ternera con patatas y zanahorias: Un manjar
               reconfortante que te envuelve en un abrazo cálido con cada
@@ -486,453 +89,627 @@
         </li>
         <li>
           <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <div class="precio">7,50€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/guiso-de-ternera-arroz-y-verduras_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Guiso de ternera con arroz y verduras: Comenzamos sofriendo lentamente cebolla, ajo, pulpa de pimiento
+              choricero y zanahoria e incorporamos
+              champiñones y tomate concentrado. Mojamos con vino tinto y especiamos con comino y tomillo para incorporar
+              nuestro caldo casero de ternera. Finalmente, cocinamos la carne de ternera a baja temperatura asegurándonos
+              que quede melosa para rematar este guiso completando con patatas cocidas al vapor.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/sopa-criolla-limena_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Sopa criolla limena: Para este clásico plato peruano, comenzamos sofriendo lentamente cebolla morada junto
+              con ajo y jengibre.
+              Incorporamos pasta de ají panka que le aporta la alegría tan característica a este plato. Cocinamos con
+              nuestro caldo de cerdo. Para rematar incorporamos cilantro fresco. Como guarnición acompañamos con pasta de
+              trigo y carne de cerdo desmigada.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos"
+              src="../img/img.platos/salmon-con-salsa-provenzal-patatas-y-verduras-variadas_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Salmon con salsa provenzal, patatas y verduras varidas: Para este clásico plato peruano, comenzamos
+              sofriendo lentamente cebolla morada junto con ajo y jengibre.
+              Incorporamos pasta de ají panka que le aporta la alegría tan característica a este plato. Cocinamos con
+              nuestro caldo de cerdo. Para rematar incorporamos cilantro fresco. Como guarnición acompañamos con pasta de
+              trigo y carne de cerdo desmigada.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/pavo-con-salsa-tunecina-cous-cous-y-verduritas_B.jpg"
+              alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Pavo con salsa tunecina, cous cous y verduritas: Cocinamos a baja temperatura la pechuga de pavo
+              asegurándonos que quede cocida y perfectamente jugosa. Para
+              la salsa comenzamos sofriendo cebolla morada junto con ajo y jengibre. Incorporamos ciruelas pasas que
+              aportan ese punto de dulzor y especiamos con comino y cayena, el zumo de limón realza el conjunto con su
+              acidez. Para rematar el plato acompañamos con cous cous y verduras.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos"
+              src="../img/img.platos/contramuslo-con-salsa-de-yogurt-y-menta-cous-cous-y-verduras_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Contramuslo con salsa de yogurt y menta, cous cous y verduras: Cocinamos el contramuslo a alta temperatura
+              asegurándonos de que quede un bonito color dorado y a la vez
+              jugoso. Para la salsa sofreímos ajo junto con cebolla, e incorporamos un poco de jengibre y pimentón.
+              Mojamos con nuestro caldo de pollo tostado y cocinamos lentamente. A último momento incorporamos el yogur y
+              la menta fresca. Como acompañamiento, cous cous y un mix de verduras.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/merluza-en-salsa-verde_B.jpg" alt="" />
+            <div class="descripcion">
+              Merluza en salsa verde: Un lomo de merluza, limpio de espinas y listo para comer, cocinado a baja
+              temperatura, acompañado de patatas
+              y una salsa verde de su fumet. Terminamos con perejil fresco y un chorrito de aceite de oliva.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos"
+              src="../img/img.platos/albondigas-con-salsa-toscana-patatas-cebollitas-y-brocoli_B.jpg" alt="" />
+            <div class="descripcion">
+              Albondigas con salsa toscana, patatas, cebollitas y brocoli: Empezamos marcando las albóndigas a fuego
+              fuerte. Para la salsa comenzamos sofriendo zanahorias y cebolla
+              morada. Incorporamos un poco de pasta de tomate y ajo confitado, mojamos con vino y añadimos nuestro caldo
+              de ternera casero. Cocinamos todo a fuego suave. Para rematar y redondear los sabores incorporamos un poco
+              de nata e introducimos las albóndigas en la salsa para guisarlas con el conjunto. Para completar el plato,
+              patatas asadas, brócoli y unas cebollitas francesas.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/pollo-con-salsa-yakarta-arroz-y-verduras_B.jpg"
+              alt="" />
+            <div class="descripcion">
+              Pollo con salsa yakarta, arroz y verduritas: Cocinamos el pollo a alta temperatura en el horno asegurándonos
+              que quede cocido y a la vez jugoso. Para la
+              salsa sofreímos chipotles junto con zumo de lima y curcuma. Para rematar el arroz y el mix de verduras crean
+              un equilibrio perfecto.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos"
+              src="../img/img.platos/pollo-con-salsa-thai-verduras-y-noodles-de-boniato_B.jpg" alt="" />
+            <div class="descripcion">
+              Pollo con salsa thai, verduras y noodles de boniato: Para la base de este plato sofreímos lentamente cebolla
+              junto con ajo y setas. Incorporamos salsa de soja, jengibre y leche de coco, incorporamos un poco de cayena
+              en polvo para darle alegría. Cocinamos las verduras al vapor. En este caso empleamos noodles de boniato que
+              tienen una textura única.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/olla-recao_B.jpg" alt="" />
+            <div class="descripcion">
+              Olla recao: Para este clásico aragonés comenzamos sofriendo cebolla junto con pimientos verdes, zanahoria y
+              pulpa de pimiento choricero. Mojamos con un poco de vino blanco y nuestro caldo de verduras casero. Este
+              contundente plato se completa con alubias y arroz.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos"
+              src="../img/img.platos/merluza-con-allada-gallega-panaderas-champinones-y-cebollitas_B.jpg" alt="" />
+            <div class="descripcion">
+              Merluza con allada gallega, panaderas, champiñones y cebollitas: Para la base de la allada partimos de
+              nuestro caldo de pescados hecho a partir de espinas, vino blanco, pimentón, ajo y aceite de oliva. Cocinamos
+              la merluza a baja temperatura dentro de la salsa para que quede jugosa. Para rematar acompañamos con unas
+              patatas panaderas y un mix de verduras.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/curry-chaat-de-pavo-noodles-de-arroz-y-verduras_B.jpg"
+              alt="" />
+            <div class="descripcion">
+              Curry chaat de pavo, noodles de arroz y verduras: Cocinamos la pechuga de pavo a baja temperatura
+              asegurándonos que quede jugoso. Para el curry comenzamos sofriendo ajo junto con pasta de curry rojo y
+              avellanas. Incorporamos yogur y jengibre. El aporte de salsa de soja, azúcar y zumo de lima crea un
+              equilibrio entre salado, acido y dulce. Para rematar el plato acompañamos con noodles de arroz y un mix de
+              verduras.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos"
+              src="../img/img.platos/pechuga-de-pollo-al-whisky-patatas-y-verduras-escalivadas_B.jpg" alt="" />
+            <div class="descripcion">
+              Pechuga de pollo al whisky, patatas y verduras escalivadas: Cocinamos las pechugas asegurándonos que queden
+              jugosas. Para la salsa comenzamos reduciendo por
+              evaporación el whisky a la mitad de su volumen para que pierda alcohol, mientras sofreímos lentamente
+              cebolla, junto con ajo y pimiento verde, incorporamos un poco de nata, nuestro caldo casero y el whisky
+              reducido. Para rematar el plagto acompañamos con patatas asadas y verduras escalivadas.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/cerdo-agridulce-arroz-y-verduritas_B.jpg" alt="" />
+            <div class="descripcion">
+              Cerdo agridulce, arroz y verduritas: Cocinamos la aguja de cerdo a baja temperatura, asegurándonos así que
+              quede bien melosa. Para la salsa, comenzamos sofriendo ajo junto con jengibre e incorporamos azúcar moreno,
+              cayena y salsa de soja. Cocinamos el conjunto con nuestro caldo casero y finalmente, para rematar el plato,
+              acompañamos con arroz y un mix de verduras.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos"
+              src="../img/img.platos/lomo-de-cerdo-a-la-alemana-patatas-brocoli-y-champinones_B.jpg" alt="" />
+            <div class="descripcion">
+              Lomo de cerdo a la alemana, patatas, brócoli y champiñones: Cocinamos el lomo de cerdo a baja temperatura
+              asegurándonos que quede jugoso. Para la salsa, comenzamos sofriendo bacon junto con ajo y cebolla, mojamos
+              con nuestro caldo casero y añadimos un golpe de mostaza y miel para realzar el conjunto, aromatizando con
+              tomillo y un ligero aporte de nata que equilibra los sabores. Finalmente, para rematar el plato, acompañamos
+              con patatas, brócoli y champiñones salteados.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/salmon-teriyaki-con-noodles_B.jpg" alt="" />
+            <div class="descripcion">
+              Salmón teriyaki con noodles: Cocinamos al vacío un lomo de salmón fresco y sin espinas, a temperatura muy
+              baja para conservar toda su jugosidad. Lo acompañamos de la versión suave de nuestra salsa teriyaki y de
+              unos noodles chinos ligeramente salteados.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/tortiglioni-tomate-cremoso-y-bacon_B.jpg" alt="" />
+            <div class="descripcion">
+              Tortiglioni tomate cremoso y bacon: Sofreímos suavemente ajo y cebolla junto a un par de cayenas, añadimos
+              tomate y dejamos cocinar a fuejo lento. Añadimos una mezcla de especias italianas, el bacon crujiente y
+              terminamos con un punto de crema de leche para ganar untuosidad.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+  
       </ul>
+  
     </div>
-
+  
+    <!-- Veganos -->
+    <div id="indiceVeganos"></div>
+    <div id="veganos">
+      <div class="categoriaPlatos">
+        <div class="linea"></div>
+        <h2>Veganos</h2>
+        <div class="linea"></div>
+      </div>
+  
+      <ul class="platos">
+  
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/olla-recao_B.jpg" alt="" />
+            <div class="descripcion">
+              Olla recao: Para este clásico aragonés comenzamos sofriendo cebolla junto con pimientos verdes, zanahoria y
+              pulpa de pimiento choricero. Mojamos con un poco de vino blanco y nuestro caldo de verduras casero. Este
+              contundente plato se completa con alubias y arroz.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">7,50€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/canelones-de-pisto_B.jpg" alt="" />
+            <div class="descripcion">
+              Canelones de pisto: Comenzamos sofriendo lentamente pimientos rojos y verdes junto con cebolla lenta y
+              previamente sofreída. Incorporamos el calabacín y cocinamos lentamente hasta que obtenemos la textura tan
+              característica de pisto. Rellenamos los canelones manualmente y los cubrimos con nuestra bechamel. Para
+              gratinar incorporamos queso manchego.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/pasta-al-pesto-veggie_B.jpg" alt="" />
+            <div class="descripcion">
+              Pasta al pesto veggie: Esta versión de este clásico genovés mantiene la albahaca, los piñones, el zumo de
+              limón el aceite de oliva y la sal. Hemos reemplazado el Parmigiano Reggiano por Tofu y para lograr el umami
+              hemos incorporado un poco de salsa de soja.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/risotto-al-funghi_B.jpg" alt="" />
+            <div class="descripcion">
+              Risotto al funghi: Sofreímos suavemente una base de setas de temporada y cebolla blanca, añadimos vino
+              blanco seco y arroz redondo. Cocinamos el arroz a la manera tradicional italiana y terminamos el plato con
+              grana padano.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/curry-massaman-de-legumbreta-y-verduras_B.jpg" alt="" />
+            <div class="descripcion">
+              Curry massaman de legumbreta y verduras: Para la base comenzamos sofriendo lentamente ajo junto con cebolla,
+              incorporamos pasta de curry massaman y mojamos con nuestro caldo de verduras. Incorporamos la proteína 100%
+              vegetal y un poco de cilantro y zumo de limón que potencian el conjunto. Para rematar cocinamos Bimi con un
+              mix de verduras.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/heura-con-salsa-hoisin-verduras-y-arroz_B.jpg" alt="" />
+            <div class="descripcion">
+              Heura con salsa hoisin, verduras y arroz: Cocinamos la proteína 100% vegetal para que adquiera un bonito
+              color dorado y la acompañamos con un mix de verduras y arroz largo. Unificamos todo con nuestra salsa
+              hoisin. Su toque asiático da una explosión de sabor a este plato.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/crema-de-calabaza-y-boniato_B.jpg" alt="" />
+            <div class="descripcion">
+              Crema de calabaza y boniato: Sofreímos la calabaza junto con el boniato, ajo y jengibre. Incorporamos un
+              poco de cúrcuma y salsa de soja. Finalmente, trituramos muy bien dejando perfectamente liso el conjunto.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/pisto-de-berenjenas_B.jpg" alt="" />
+            <div class="descripcion">
+              Pisto de berenjenas: Versión que hacen en el sur de italia de nuestro tradicional pisto. Partimos de una
+              berenjena salteada con salsa de tomate, aceitunas, alcaparras y terminado con hierbas frescas.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imagenContainer">
+            <div class="precio">11,30€</div>
+            <img class="ImagenesProductos" src="../img/img.platos/pan-artesano-de-masa-madre-500-g_B.jpg" alt="" />
+            <div class="descripcion">
+              Pan artesano de masa madre - 500 g: Pensado para tostar. Elaborado artesanalmente en horno de piedra. Miga
+              alveolada húmeda gracias a un proceso de fermentación lento de 48 horas y una hidratación del 80% que le
+              otorga un característico toque de acidez. Tras el tueste su corteza se vuelve crujiente de color caramelo.
+              Ideal para empezar el día con unas buenas tostadas.
+            </div>
+            <div class="alergenos">
+              <h2>Alergenos</h2>
+              <ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+  
+    </div>
+  
+  
     <!-- Postres -->
+    <div id="indicePostres"></div>
     <div id="postres">
       <div class="categoriaPlatos">
         <div class="linea"></div>
         <h2>Postres</h2>
         <div class="linea"></div>
       </div>
-
+  
       <ul class="platos">
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/financiero-de-frutos-rojos-y-limon_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Financiero de frutos rojos y limón: Para este clásico de la pastelería comenzamos fundiendo la mantequilla a
+              la que incorporamos la ralladura de limón para aromatizar. Agregamos el resto de ingredientes y por último
+              los frutos rojos que crean un balance de dulzor, acidez y jugosidad.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/cookie-gigante-de-chocolate_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Cookie gigante de chocolate: ¿Un caprichito? Para la hora del café, para el desayuno, de postre o por la
+              noche viendo la tele. 100% artesanas, con pepitas de chocolate negro, vainilla y azúcar moreno. Cuidado, son
+              adictivas.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
-
+  
         <li>
           <div class="imagenContainer">
             <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
+            <img class="ImagenesProductos" src="../img/img.platos/flan-de-fresas-vegano_B.jpg" alt="" />
             <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
+              Flan de fresas vegano: Para este postre 100% vegetal trituramos la leche de coco junto con las fresas y el azúcar. Llevamos a hervor y espesamos.
             </div>
             <div class="alergenos">
               <h2>Alergenos</h2>
               <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
+                <li>Trigo</li>
+                <li>Huevos</li>
+                <li>Leche</li>
+              </ul>
             </div>
           </div>
         </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">7,50€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Albondigasensalsaconpatatadado.webp"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/ensalada.jpeg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/lasaña.png"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="imagenContainer">
-            <div class="precio">11,30€</div>
-            <img
-              class="ImagenesProductos"
-              src="../img/img.platos/Estofado.jpg"
-              alt=""
-            />
-            <div class="descripcion">
-              Estofado de ternera con patatas y zanahorias: Un manjar
-              reconfortante que te envuelve en un abrazo cálido con cada
-              cucharada. La ternera tierna se mezcla con patatas y zanahorias
-              tiernas en un caldo abundante y sabroso que te hará sentir como en
-              casa.
-            </div>
-            <div class="alergenos">
-              <h2>Alergenos</h2>
-              <ul>
-                <li> 
-                    <img src="../img/img.alergenos/Fish_icon-icons.com_67594.png" alt="Pescado">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/IconoAlergenoMoluscos-Mollusks_icon-icons.com_67596.png" alt="Moluscos">
-                </li>
-                <li> 
-                    <img src="../img/img.alergenos/Soy_icon-icons.com_67593.png" alt="Soja" >
-                </li>
-            </ul>
-            </div>
-          </div>
-        </li>
+  
       </ul>
+  
     </div>
+
+    <script src="../js/categoriasPlatos.js"></script>
 
     <!-- Modal -->
     <div id="myModal" class="modal">
