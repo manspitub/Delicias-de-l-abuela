@@ -4,180 +4,148 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delicias de l´abuela</title>
-
+    <title>Delicias de l´Abuela</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        crossorigin="anonymous" />
-
 </head>
 
-<body >
-    <!--Etiqueta para header-->
-    <main>
-    </main>
+<body>
     <header>
         <div>
-          <span>
-
-            <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
-
-            <!-- CAMBIAR FORMATO A PNG BUENO -->
-          </span>
+            <span>
+                <a href="../index.html">
+                    <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+                  </a>
+            </span>
         </div>
         <div class="main">
-          <a href="index.html"><span>Home</span></a>
-
-          <a href="productos.html"><span>Productos</span></a>
-
-          <a href="about.html"><span>About</span></a>
+            <a href="../index.html"><span>Home</span></a>
+            <a href="productos.html"><span>Productos</span></a>
+            <a href="about.html"><span>About</span></a>
         </div>
         <div class="userCarrito">
-          <a href="inicio-sesion.html">
-
-            <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user" /> </span>
-
-          </a>
-  
-          <span style="width: 300px"></span>
-          <span id="iconoCarrito">
-
-            <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
-
-            <div id="cantidadCarrito">0</div>
-          </span>
+            <a href="inicio-sesion.html">
+                <span><img class="user" src="../img/LOGO_USUARIO.png" alt="user" /></span>
+            </a>
+            <span style="width: 300px"></span>
+            <span id="iconoCarrito">
+                <img class="carrito" src="../img/CARRITO_BUENO.png" alt="carrito" />
+                <div id="cantidadCarrito">0</div>
+            </span>
         </div>
-      </header>
+    </header>
+
     <div class="mainContent">
-        <div class="formulario">
-
-        <div class="TituloInicioSesion"><h1>Crea tu cuenta</h1></div>
-        <form id="registro" action="" method="post">
-
-
-
-            <div class="input">
-                <label for="email"></label>
-                <input placeholder="Introduzca su email" type="text" id="email" name="email">
+        <div class="errorContainer">
+            <div class="formulario">
+                <div class="TituloInicioSesion">
+                    <h1>¡ Crea tu cuenta !</h1>
+                </div>
+                <form id="registro" action="" method="post">
+                    <div class="input">
+                        <label for="email"></label>
+                        <input placeholder="Introduzca su email" type="text" id="email" name="email">
+                    </div>
+                    <div class="input">
+                        <label for="telefono"></label>
+                        <input placeholder="Introduzca su número telefónico" type="text" id="telefono" name="telefono">
+                    </div>
+                    <div class="input">
+                        <label for="usuario"></label>
+                        <input placeholder="Establezca su nombre de usuario" type="text" id="username" name="username">
+                    </div>
+                    <div class="input">
+                        <label for="contrasenia"></label>
+                        <input placeholder="Establezca su contraseña" type="password" id="password" name="password">
+                    </div>
+                    <button type="submit">Crear cuenta</button>
+                </form>
             </div>
-
-            <div class="input">
-                <label for="telefono"></label>
-                <input placeholder="Introduzca su número telefónico" type="text" id="telefono" name="telefono">
-            </div>
-
-            <div class="input">
-                <label for="usuario"></label>
-                <input placeholder="Establezca su nombre de usuario" type="text" id="username" name="username">
-            </div>
-
-            <div class="input">
-                <label for="contrasenia"></label>
-                <input placeholder="Establezca su contraseña" type="password" id="password" name="password">
-            </div>
-            
-
-        
-            <button type="submit">Crear cuenta</button>
-            
-        </form>
+            <div class="errores"></div>
         </div>
-        <div class="errores">yr,</div>
-
-
     </div>
 
     <footer>
         <div class="contenedorLogos">
-          <div class="abuela">
-  
-            <a href="index.html">
-              <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
-            </a>       
-          </div>
-          <div class="logos">
-            <a href="https://www.instagram.com">
-              <img class="logoRRSS" src="../img/instagram.png" alt="insta" />
-            </a>
-            <a href="https://www.facebook.com">
-              <img class="logoRRSS" src="../img/facebook.png" alt="facebook" />
-            </a>
-            <a href="https://twitter.com">
-              <img class="logoRRSS" src="../img/twitter.png" alt="equis" />
-            </a>
-          </div>
-        </div>
-  
-        <div class="datosfoot">
-          <div>
-            <h3>Contacto</h3>
-            <li>Telefonos de contacto:</li>
-            <li>+34 679 640 570</li>
-            <li>E-mail:</li>
-            <li>deliciasDelAbuela@delicias.es</li>
-          </div>
-          <div>
-            <h3>Información</h3>
-            <div>
-              <li>Sobre Nosotros</li>
-              <!--Añadir hipervínculo-->
-              <li><a href="../img/trolleito.jpg">Política de cookies</a></li>
-              <li><a href="https://ads.google.com/intl/es_es/home/">Publicidad</a></li>
-              <li><a href="https://knoweats.com/?utm_medium=cpc&utm_source=google&utm_campaign=1.Branding&utm_term=&utm_content=knoweats&gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qbK2WHVsWx1rCQ81LCHyvQJ47_mj9qGkm5IO1luJa7MVyegmnyUzgaArMeEALw_wcB">Afiliados</a></li>
-              <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+            <div class="abuela">
+                <a href="../index.html">
+                    <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
+                  </a>
             </div>
-          </div>
-  
-          <div>
-            <h3>Empresa</h3>
-            <li>Nuestros envíos</li>
-            <li>Eat local, eat fresh, eat green</li>
-            <li>Cómo trabajamos</li>
-  
-            <li>
-  
-              <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed"/></a>
-            </li>
-          </div>
+            <div class="logos">
+                <a href="https://www.instagram.com">
+                    <img class="logoRRSS" src="../img/instagram.png" alt="insta" />
+                </a>
+                <a href="https://www.facebook.com">
+                    <img class="logoRRSS" src="../img/facebook.png" alt="facebook" />
+                </a>
+                <a href="https://twitter.com">
+                    <img class="logoRRSS" src="../img/twitter.png" alt="equis" />
+                </a>
+            </div>
+        </div>
+        <div class="datosfoot">
+            <div>
+                <h3>Contacto</h3>
+                <li>Telefonos de contacto:</li>
+                <li>+34 679 640 570</li>
+                <li>E-mail:</li>
+                <li>deliciasDelAbuela@delicias.es</li>
+            </div>
+            <div>
+                <h3>Información</h3>
+                <div>
+                    <li><a href="../html/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../img/trolleito.jpg">Política de cookies</a></li>
+                    <li><a href="https://ads.google.com/intl/es_es/home/">Publicidad</a></li>
+                    <li><a href="https://knoweats.com/?utm_medium=cpc&utm_source=google&utm_campaign=1.Branding&utm_term=&utm_content=knoweats&gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qbK2WHVsWx1rCQ81LCHyvQJ47_mj9qGkm5IO1luJa7MVyegmnyUzgaArMeEALw_wcB">Afiliados</a></li>
+                    <li><a href="../html/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                </div>
+            </div>
+            <div>
+                <h3>Empresa</h3>
+                <li><a href="../html/envios.html">Nuestros envíos</a></li>
+                <li>Eat local, eat fresh, eat green</li>
+                <li>Cómo trabajamos</li>
+                <li><a href="../html/ERP_CRM.html">ERP y CRM</a></li>
+                <li>
+                    <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed" /></a>
+                </li>
+            </div>
         </div>
         <div class="metodosPago">Métodos de Pago:
-          <br>
-          <br>
-          <span class="metodo">
-              <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
-          </span>
-          <span class="metodo">
-              <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
-          </span>
-          <span class="metodo">
-              <img src="https://img.icons8.com/color/48/000000/bitcoin.png" alt="Bitcoin">
-          </span>
-          <span class="metodo">
-              <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
-          </span>
-      </div>
-      </footer>
+            <br>
+            <br>
+            <span class="metodo">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+            </span>
+            <span class="metodo">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+            </span>
+            <span class="metodo">
+                <img src="https://img.icons8.com/color/48/000000/bitcoin.png" alt="Bitcoin">
+            </span>
+            <span class="metodo">
+                <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+            </span>
+        </div>
+    </footer>
     <div class="cookies">
-        © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados. <!--JS poner fecha de hoy-->
+        © Delicias de l'Abuela, Mayo 2024. Todos los derechos reservados.
     </div>
 
     <aside id="asideCarrito" class="aside-carrito">
         <div id="cerrarAside" class="cerrar-aside">X</div>
-  
-        <!-- Contenido del aside aquí -->
         <div id="mensajeNoProductos">
-          <div>No hay productos seleccionados.</div>
-          <div>
-            <button>Seguir comprando</button>
-          </div>
+            <div>No hay productos seleccionados.</div>
+            <div>
+                <a href="../html/productos.html"><button>Seguir comprando</button></a>
+            </div>
         </div>
-      </aside>
-      <div id="overlay" class="overlay"></div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
 
-      <script src="../js/carrito.js"></script>
-
-      <script src="../js/registro.js"></script>
-
+    <script src="../js/carrito.js"></script>
+    <script src="../js/registro.js"></script>
 </body>
 
 </html>

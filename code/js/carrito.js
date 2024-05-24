@@ -71,3 +71,4 @@ cantidadCarrito.addEventListener("DOMSubtreeModified", function() {
         cantidadCarrito.style.display = "block";
     }
 });
+

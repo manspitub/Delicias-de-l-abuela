@@ -104,7 +104,7 @@ a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgb(147, 18, 134);
+    background-color: #8b0000;
     color: white; 
     border-radius: 50%;
     padding: 5px 8px;
@@ -300,24 +300,24 @@ button {
 
     color: white;
     font-size: larger;
-    background-color: rgb(147, 18, 134);
+    background-color: #8b0000;
     width: 70%;
     height: 70px;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
 
 .presentacion li::before {
-    content: "\2713";
-    /* Símbolo de check en Unicode */
+    content: "\2714";
     color: green;
-    /* Color del check */
     font-size: 20px;
-    /* Tamaño del check */
     margin-right: 10px;
-    /* Espacio entre el check y el texto */
 }
+
+
+
 
 .imgPrincipal img {
     border-radius: 10%;
@@ -332,98 +332,115 @@ button {
 
 
 /*FORMULARIO DE INICIO DE SESIÓN*/
-
 div.formulario {
-    opacity: 0.7;
-    margin: 100px;
-    height: 60%;
-    width: 40%;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 500px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #152822;
     border-radius: 20px;
-    padding: 10px;
-    background-image: url('../img/Fondo-cocina.jpeg');
-    /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
+    padding: 20px;
+    background-color: #152822;
     background-size: cover;
-    /* Esto hace que la imagen de fondo cubra todo el formulario */
     background-position: center;
-    /* Centra la imagen de fondo */
-    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
-
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-
-
 }
 
 .input {
-    align-items: center;
     width: 100%;
-    margin-bottom: 45px;
-    height: 40px;
-
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .input input[type="text"],
-input[type="password"] {
-    font-size: 25px;
+.input input[type="password"] {
+    font-size: 18px;
     background-color: #eadfbc;
     padding: 10px;
+    border: none;
     border-radius: 20px;
-    height: 100%;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button[type="submit"]:hover {
+    background-color: forestgreen;
 }
 
 div.sesionGoogle {
-    height: 50px;
     text-align: center;
-    width: 300px;
     margin-top: 20px;
-    vertical-align: middle;
+    margin-bottom: 18px;
 }
 
 div.sesionGoogle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 div.sesionGoogle img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 10%;
-    margin-right: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #google {
-    height: 80%;
-    padding: auto;
-    text-align: right;
-    border-radius: 40px;
-    width: 100%;
+    height: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
     background-color: #ffffff;
     color: black;
-
+    width: 100%;
 }
+
 
 
 /*FORMULARIO DE ERRORES*/
-
-div.errores{
-    float: unset;
-    height: 80px;
-    width: 80px;
-    display: block;
-    border: 1px solid red;
-    color: red;
+.error-message {
+    color: #fff;
+    background-color: firebrick;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
+
+
 
 .rayaO {
     margin-top: 30px;
@@ -431,14 +448,8 @@ div.errores{
 }
 
 .TituloInicioSesion {
-    background-color: rgb(70, 7, 95);
-    box-sizing: border-box;
-    border-radius: 30px;
     margin-bottom: 10px;
     color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 /*CSS CARRUSEL*/
@@ -494,7 +505,7 @@ div.errores{
     top: 10px;
     left: 10px;
     width: 10%;
-    background-color: rgb(148, 37, 204);
+    background-color: #8b0000;
     color: white;
     padding: 24px;
     display: flex;
@@ -719,6 +730,10 @@ div.errores{
     cursor: pointer;
 }
 
+.tipoPlatos a {
+    color: #8b0000;
+}
+
 .linea {
     flex: 1;
     height: 1px;
@@ -734,6 +749,17 @@ div.errores{
     font-family: Fraunces, sans-serif;
     color: black;
     font-weight: bold;
+}
+
+.categorias {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 50px;
+}
+
+#indiceMasVendidos,#indiceVeganos,#indicePostres{
+    height: 120px;
 }
 
 .descripcionProducto {
@@ -784,10 +810,21 @@ div.errores{
     height: 380px;
   }
 
-  .botonesProductos:hover{
+  .botonesProductos.selected{
     background-color: black;
   }
+
+  #veganos.hidden{
+    display: none;
+  }
   
+  #masVendidos.hidden{
+    display: none;
+  }
+
+  #postres.hidden{
+    display: none;
+  }
 
 /*Modal*/
 
@@ -856,9 +893,14 @@ div.errores{
     display: flex;
     justify-content: space-between;
 }
-∫
-.modal-alergenos li {
+
+.modal-alergenos ul > li {
+    list-style-type: none;
     margin-bottom: 5px;
+}
+
+.modal-alergenos ul > li > img{
+    width: 50px
 }
 
   button:hover{
@@ -894,12 +936,15 @@ div.errores{
 
 /* Estilo para cada elemento de la lista del carrito */
 .carrito-item {
+    min-height: 7rem;
+    overflow: hidden;
+    position: relative;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #f2f0ec;
     border-radius: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -908,20 +953,31 @@ div.errores{
 }
 
 .carrito-img {
-    width: 100px; 
-    margin-right: 10px;
-    border-radius: 4px;
+    width: 33%;
+    height: 100%;
+    margin-right: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .carrito-texto {
     color: black;
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
 }
 
 .producto-titulo {
+
+    width: 250px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
+    overflow-y: hidden;
 }
 
 .producto-cantidad {
@@ -938,12 +994,13 @@ div.errores{
 }
 
 /* Estilo para el botón de vaciar carrito */
-#boton-vaciar {
+#boton-vaciar,#boton-pedir {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 4px;
-    background-color: #e74c3c;
+    background-color: #8b0000;
     border: none;
     color: white;
     border-radius: 4px;
@@ -952,14 +1009,33 @@ div.errores{
     align-self: center;
 }
 
-#boton-vaciar img{
+button > img{
     width: 15%;
 }
 
 
 #boton-vaciar:hover {
     background-color: #c0392b;
+}
 
+/* Botón Pedir */
+#boton-pedir {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+#boton-pedir:hover {
+    background-color: #45a049; /* Verde oscuro */
+}
+
+/* Botón Confirmar en el modal de confirmación */
+#confirmarPedidoButton {
+    background-color: #008CBA; /* Azul */
+    color: white;
+}
+
+#confirmarPedidoButton:hover {
+    background-color: #007B9A; /* Azul oscuro */
 }
 
 /*RSS*/
@@ -1049,3 +1125,139 @@ div.errores{
     color: #797979;
 
 }
+
+/*RCM_RCP*/
+
+.ERP_CRM {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #152822;
+}
+
+.ERP_CRM h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #8b0000;
+    border-bottom: 2px solid #152822;
+    padding-bottom: 5px;
+}
+
+.ERP_CRM h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #8b0000;
+}
+
+.ERP_CRM p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.ERP_CRM ul {
+    margin-left: 20px;
+}
+
+.ERP_CRM ul li {
+    margin-bottom: 10px;
+}
+
+  
+/*ENVIOS*/
+.envios {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #ede5d9;
+    color: #152822;
+    text-align: center;
+  }
+  
+  .envios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #8b0000;
+    border-bottom: 2px solid #152822;
+    padding-bottom: 10px;
+  }
+  
+  .envios h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #8b0000;
+  }
+  
+  .envios p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .apartadoEnvios {
+    margin-bottom: 40px;
+  }
+  
+  .apartadoEnvios-image {
+    max-width: 650px; /* ajusta este valor según lo que desees */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #152822;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .apartadoEnvios-image:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .modalPedido {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+}
+
+.modal-content-pedido {
+    color: black;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Ancho máximo para el contenido modal */
+    text-align: center;
+}   
+
+/* Spinner */
+.spinner {
+    margin: 20px auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+

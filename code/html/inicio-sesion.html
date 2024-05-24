@@ -21,14 +21,14 @@
 
         <div>
             <span>
-                <a href="index.html">
+                <a href="../index.html">
                     <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
                 </a>
             </span>
         </div>
   
         <div class="main">
-            <a href="index.html"><span>Home</span></a>
+            <a href="../index.html"><span>Home</span></a>
             <a href="productos.html"><span>Productos</span></a>
             <a href="about.html"><span>About</span></a>
         </div>
@@ -52,37 +52,37 @@
     </header>
   
     <div class="mainContent">
-        <div class="formulario">
-            <div class="TituloInicioSesion"><h1>Inicio de Sesión</h1></div>
-        <form action="" method="post">
+      <div class="errorContainer">
+      <div class="formulario">
+          <div class="TituloInicioSesion"><h1>Inicio de Sesión</h1></div>
+      <form action="" method="post">
 
-            <div class="input">
-                <label for="usuario"></label>
-                <input placeholder="Escriba su nombre de usuario" type="text" id="username" name="username">
-            </div>
-            <div class="input">
-                <label for="contrasenia"></label>
-                <input placeholder="Escriba su contraseña" type="password" id="password" name="password">
-            </div>
-            <button type="submit">Iniciar Sesión</button>
-            <div class="rayaO"><hr></div>
-        </form>
-        <div class="sesionGoogle">
+          <div class="input">
+              <label for="usuario"></label>
+              <input placeholder="Escriba su nombre de usuario" type="text" id="username" name="username">
+          </div>
+          <div class="input">
+              <label for="contrasenia"></label>
+              <input placeholder="Escriba su contraseña" type="password" id="password" name="password">
+          </div>
+          <button type="submit">Iniciar Sesión</button>
+      </form>
+      <div class="sesionGoogle">
 
-            <button id="google"><img src="../img/google.png" alt="google">Inicia sesión con Google</button>
+          <button id="google"><img src="../img/google.png" alt="google">Inicia sesión con Google</button>
 
-        </div>
-        <a href="registro.html">Regístrate</a>
-        </div>
+      </div>
+      <a href="registro.html">Si aún no tienes cuenta pincha aquí</a>
+      </div>
 
-        </form>
-    </div>
-
+      </form>
+  </div>
+  </div>
     <footer>
         <div class="contenedorLogos">
           <div class="abuela">
   
-            <a href="index.html">
+            <a href="../index.html">
               <img class="logoAbuela" src="../img/LOGO_BUENO.png" alt="logo" />
             </a>       
           </div>
@@ -110,7 +110,7 @@
           <div>
             <h3>Información</h3>
             <div>
-              <li>Sobre Nosotros</li>
+              <li><a href="../html/sobrenosotros.html">Sobre Nosotros</a></li>
               <!--Añadir hipervínculo-->
               <li><a href="../img/trolleito.jpg">Política de cookies</a></li>
               <li><a href="https://ads.google.com/intl/es_es/home/">Publicidad</a></li>
@@ -121,10 +121,10 @@
   
           <div>
             <h3>Empresa</h3>
-            <li>Nuestros envíos</li>
+            <li><a href="../html/envios.html">Nuestros envíos</a></li>
             <li>Eat local, eat fresh, eat green</li>
             <li>Cómo trabajamos</li>
-  
+            <li><a href="../html/ERP_CRM.html">ERP y CRM</a></li>
             <li>
   
               <a href="../html/RSS.html"><img src="rss-icon.png" alt="RSS Feed"/></a>
@@ -159,7 +159,7 @@
         <div id="mensajeNoProductos">
           <div>No hay productos seleccionados.</div>
           <div>
-            <button>Seguir comprando</button>
+            <a href="../html/productos.html"><button>Seguir comprando</button></a>
           </div>
         </div>
       </aside>
