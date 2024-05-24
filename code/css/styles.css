@@ -730,6 +730,10 @@ div.sesionGoogle img {
     cursor: pointer;
 }
 
+.tipoPlatos a {
+    color: #8b0000;
+}
+
 .linea {
     flex: 1;
     height: 1px;
